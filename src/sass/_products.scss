@@ -1,0 +1,12 @@
+.products-list__wrapper::before{
+    content: "";
+    position: absolute;
+    display: block;
+    
+    width: 280px;
+    height: 485px;
+
+    background: #FFB8CA;
+    border-radius: 24px;
+    z-index: 0;
+}
