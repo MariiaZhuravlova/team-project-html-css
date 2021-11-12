@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/demo.jpg":[["demo.090c7c6d.jpg","nKR3"],"nKR3"],"./../images/advantages/icon-adv-1-1.png":[["icon-adv-1-1.dd7c127f.png","tiCi"],"tiCi"],"./../images/advantages/icon-adv-1-2.png":[["icon-adv-1-2.e1905efe.png","ltgc"],"ltgc"],"./../images/advantages/icon-adv-2-1.png":[["icon-adv-2-1.937ed094.png","M6Mq"],"M6Mq"],"./../images/advantages/icon-adv-2-2.png":[["icon-adv-2-2.554a7734.png","vmZF"],"vmZF"],"./../images/advantages/icon-adv-3-1.png":[["icon-adv-3-1.c08c5d1f.png","zIM8"],"zIM8"],"./../images/advantages/icon-adv-3-2.png":[["icon-adv-3-2.c5f07602.png","VlB6"],"VlB6"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-project-html-css/src.cf26fb8d.js.map
+//# sourceMappingURL=/team-project-html-css/src.e034114f.js.map
