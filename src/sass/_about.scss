@@ -1,0 +1,39 @@
+.about {
+  background: #fff5f6;
+  padding-top: 125px;
+}
+.title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+.headline {
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+.text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(19 / 12);
+  color: #000000;
+}
+.milk-overlay {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.button-cow {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(19 / 12);
+  color: #907e82;
+}
