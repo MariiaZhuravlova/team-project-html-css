@@ -1,0 +1,80 @@
+.about {
+  background: #fff5f6;
+  padding-top: 125px;
+}
+.about-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 60px 0 60px;
+}
+.title {
+  font-family: 'Titan One';
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+.headline {
+  font-family: 'Titan One';
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d41443;
+}
+.milk-cow {
+  display: block;
+}
+.milk-cow-img {
+  padding: 0 20px 0 20px;
+  max-width: 280px;
+  margin: 0 auto;
+}
+.cow-text-list {
+  font-family: 'DM Sans';
+  padding: 0 50px 0 50px;
+  margin-bottom: 17px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(20 / 12);
+  color: #907e82;
+  list-style: none;
+  max-width: 320px;
+}
+.cow-text {
+  margin-bottom: 20px;
+}
+.cow-text:first-child {
+  color: #000000;
+  margin-bottom: 40px;
+}
+.cow-text:last-child {
+  margin-bottom: 17px;
+}
+.milk-overlay {
+  position: relative;
+  margin-top: -140px;
+  //height: 133px;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.about-subcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-readmore-button {
+  margin: 0 94px 0 50px;
+  align-content: center;
+  width: 176px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  border-color: transparent;
+}
