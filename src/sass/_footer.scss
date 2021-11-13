@@ -1,0 +1,113 @@
+.footer {
+  background-color: $bgc-section;
+}
+.footer__top {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.footer__bottom {
+  padding: 25px;
+  border-top: 1px solid #e1e1e1;
+}
+.footer__heading-wrapper {
+  margin-bottom: 45px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 90px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+}
+.footer__heading-one {
+  font-family: Titan One;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.17;
+  color: $rosy-text-color;
+  text-transform: uppercase;
+
+  &--mobile {
+    display: none;
+    @media screen and (max-width: 1279px) {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 7px;
+    font-size: 26px;
+  }
+}
+.footer__heading-two {
+  display: inline-flex;
+  margin-top: 15px;
+
+  font-size: 34px;
+  line-height: 1.15;
+  color: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    letter-spacing: 0.06em;
+  }
+}
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 45px;
+}
+.socials__piece {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+
+  background-color: #fea5bb;
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+.footer__contact-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: normal;
+
+  text-align: right;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 45px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+.footer__contact-tel {
+  color: $accent-color;
+}
+.footer__copyright {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
+  width: 150px;
+
+  color: #907e82;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    line-height: 1.85;
+  }
+}
