@@ -49,16 +49,17 @@
   width: 8px;
   margin: 6px;
   cursor: pointer;
-  background-color: rgb(172, 15, 125);
-  opacity: 0.5;
+  background-color: #d9d9d9;
+  opacity: 1.5;
   border-radius: 10px;
-  transition: all 0.4s ease;
+  // transition: all 0.4s ease;
   position: relative;
 }
 .bar svg {
   display: none;
   height: 20px;
   width: 20px;
+  opacity: 2;
 }
 .bar:hover,
 :focus {
@@ -66,13 +67,34 @@
   transform: scale(1.1);
   background: none;
 }
+// .bar {
+//   // opacity: 0;
+//   // display: none;
+//   // transform: scale(1.1);
+//   // background: #d9d9d9;
+//   // z-index: 3;
+// }
+// .bar_current svg {
+//   opacity: 1;
+//   // transform: scale(1.1);
+//   background: none;
+//   display: block;
+// }
+
 .bar:hover svg,
 :focus svg {
   display: block;
+  background: none;
 }
-.bar.current {
-  display: block;
-}
+// .bar.current {
+//   display: block;
+// }
+// .bar svg {
+//   display: block;
+// }
+// .bar .current svg {
+//   display: block;
+// }
 
 // .simbol {
 //   position: absolute;
@@ -144,9 +166,9 @@ input[name='r'] {
   &::before {
     content: '';
     position: absolute;
-    left: 50%;
-    top: 144%;
-    transform: translate(-50%, -140%);
+    left: 45%;
+    top: 140%;
+    transform: translate(-50%, -100%);
 
     background-position: center;
     background-repeat: no-repeat;
@@ -223,6 +245,6 @@ input[name='r'] {
 .guest {
   align-items: center;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 70px;
   display: flex;
 }
