@@ -1,0 +1,47 @@
+.windows-mobile{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+        @media screen and (min-width: $mobile){
+            flex-direction: row;}
+    }
+.windows-mobile__button{
+    width: 161.45px;
+    height: 44px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: #FFFFFF;
+    background: #D41342;
+    border-radius: 22px;
+    margin-right: 0;
+        @media screen and (max-width: $tablet){
+        width: 191.45px;
+        margin-right: 15px;}
+        @media screen and (max-width: $desktop){
+            width: 191.45px;
+            margin-right: 15px}
+}
+.windows-mobile__button--white{
+    width: 161px;
+    height: 44px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #D41443;
+    background: #FFFFFF;
+    border-radius: 22px;
+        @media screen and (max-width: $tablet){
+                width: 174.05px;}
+        @media screen and (max-width: $desktop){
+                width: 180px;}
+}
+
+
+
+
+
