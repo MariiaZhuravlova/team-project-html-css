@@ -5,10 +5,9 @@
   position: relative;
   height: 502px;
   background-color: $hero-bgr;
-  border-bottom: 1px solid #e17992;
-  overflow: hidden;
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  
+  @media screen and (max-width: 320px) {
+    overflow: hidden;
   }
 }
 .hero-text-thumb {
