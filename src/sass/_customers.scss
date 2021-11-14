@@ -185,14 +185,15 @@ input[name='r'] {
   position: relative;
   &::after {
     content: '';
+    font-size: 100px;
     position: absolute;
     left: 60px;
-    top: 30px;
+    top: 40px;
     display: block;
-    // width: 54px;
-    // height: 40px;
+    width: 54px;
+    height: 40px;
     // background-color: #c7133e;
-    background-image: url ('./images/customer_reviews/simbol.png');
+    background-image: url(../images/customer_reviews/simbol.png);
   }
 }
 // content: '';
