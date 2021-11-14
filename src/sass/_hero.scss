@@ -6,6 +6,14 @@
   height: 502px;
   background-color: $hero-bgr;
   overflow: hidden;
+  @media screen and (min-width: $tablet) {
+    height: 399px;
+    
+  }
+  @media screen and (min-width: $desktop) {
+    height: 665px;
+    
+  }
  }
 .hero-text-thumb {
   position: absolute;
@@ -77,6 +85,7 @@
 }
 .hero-image {
   z-index: 1;
+  
 }
 .hero-img {
   display: block;
@@ -86,6 +95,7 @@
   margin-left: 77px;
   fill: transparent;
   z-index: 1;
+ 
 }
 .hero-circle {
   position: absolute;
@@ -96,6 +106,26 @@
   background-color: $rosy-text-color;
   margin-top: 83px;
   margin-left: 16px;
+  @media screen and (min-width: $mobile) {
+    margin-top: 70px;
+    margin-left: 120px;
+    width: 324px;
+  height: 324px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-top: 31px;
+    margin-left: 273px;
+    width: 324px;
+    height: 324px;
+  }
+  
+  @media screen and (min-width: $desktop) {
+    margin-top: 52px;
+    margin-left: 360px;
+    width: 538px;
+    height: 538px;
+  }
+  
 }
 .hero-img-composition {
   position: absolute;
@@ -103,4 +133,14 @@
   display: flex;
   padding: 0;
   margin-left: 16px;
+  @media screen and (min-width: $mobile) {
+    margin-top: 31px;
+    margin-left: 115px;
+    
+  }
+  @media screen and (min-width: $tablet) {
+    margin-top: 63px;
+    margin-left: 344px;
+    
+  }
 }
