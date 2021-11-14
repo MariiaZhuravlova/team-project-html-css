@@ -1,14 +1,20 @@
 .hero {
-  background-color: #ffb8ca;
+  background-color: $hero-bgr;
 }
 .container.hero {
   position: relative;
-  max-width: 320px;
   height: 502px;
-  background-color: #ffb8ca;
-  border-bottom: 1px solid #e17992;
+  background-color: $hero-bgr;
   overflow: hidden;
-}
+  @media screen and (min-width: $tablet) {
+    height: 399px;
+    
+  }
+  @media screen and (min-width: $desktop) {
+    height: 665px;
+    
+  }
+ }
 .hero-text-thumb {
   position: absolute;
   margin-top: 193px;
@@ -16,7 +22,6 @@
   z-index: 2;
 }
 .hero-text {
-  // position: absolute;
   font-family: Titan One;
   font-style: normal;
   font-weight: normal;
@@ -24,7 +29,7 @@
   line-height: (30 / 26 * 100%);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $hero-text;
 }
 .hero-title {
   font-family: Titan One;
@@ -40,7 +45,7 @@
   text-align: center;
   width: 62.4px;
   height: 24px;
-  color: #ffffff;
+  color: $hero-text;
   border-radius: 20px;
   margin-right: 8px;
   background-color: $accent-color;
@@ -50,7 +55,7 @@
     width: 82.8px;
     height: 24px;
     color: $accent-color;
-    background-color: #ffffff;
+    background-color: $hero-text;
     .hero-btn-link {
       color: $accent-color;
     }
@@ -76,10 +81,11 @@
   font-size: 8px;
   line-height: 1.25;
   text-align: center;
-  color: #ffffff;
+  color: $hero-text;
 }
 .hero-image {
   z-index: 1;
+  
 }
 .hero-img {
   display: block;
@@ -89,6 +95,7 @@
   margin-left: 77px;
   fill: transparent;
   z-index: 1;
+ 
 }
 .hero-circle {
   position: absolute;
@@ -96,10 +103,29 @@
   width: 346px;
   height: 344px;
   border-radius: 50%;
-  border-color: black;
-  background-color: #ffa5ba;
+  background-color: $rosy-text-color;
   margin-top: 83px;
   margin-left: 16px;
+  @media screen and (min-width: $mobile) {
+    margin-top: 70px;
+    margin-left: 120px;
+    width: 324px;
+  height: 324px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-top: 31px;
+    margin-left: 273px;
+    width: 324px;
+    height: 324px;
+  }
+  
+  @media screen and (min-width: $desktop) {
+    margin-top: 52px;
+    margin-left: 360px;
+    width: 538px;
+    height: 538px;
+  }
+  
 }
 .hero-img-composition {
   position: absolute;
@@ -107,4 +133,14 @@
   display: flex;
   padding: 0;
   margin-left: 16px;
+  @media screen and (min-width: $mobile) {
+    margin-top: 31px;
+    margin-left: 115px;
+    
+  }
+  @media screen and (min-width: $tablet) {
+    margin-top: 63px;
+    margin-left: 344px;
+    
+  }
 }
