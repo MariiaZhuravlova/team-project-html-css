@@ -1,0 +1,129 @@
+
+.container {
+    background-image: linear-gradient(
+        to top,
+        #fff 55%,
+        #fff5f6 45%);
+}
+
+.gallery__list {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    padding-top: 15px;
+    margin-bottom: -3px;
+    margin-left: -3px;
+
+    @media screen and (min-width: 479px) {
+        margin-bottom: -5px;
+        margin-left: -5px;
+        }
+    
+    @media screen and (min-width: 1280px) {
+        margin-bottom: -7px;
+        margin-left: -7px;
+        }
+}
+  
+.gallery__card img { 
+
+   @media screen and (max-width: 479px) {
+        border-radius: 5px;
+    }
+  
+    @media screen and (min-width: 480px) {
+        border-radius: 10px;
+    }
+  
+    @media screen and (min-width: 768px) {
+       border-radius: 15px;
+    }
+ 
+    @media screen and (min-width: 1280px) {
+       border-radius: 20px;
+    }
+}
+ 
+  
+.gallery__card {
+    display: block;
+    background-color: #FFB8CA;
+    
+    border-radius: 5px;
+    width: 39px;
+    height: 39px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    transform: scale(1, 1);
+  
+    @media screen and (min-width: 480px) {
+      
+    border-radius: 10px;
+    width: 62px;
+    height: 62px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    }
+  
+    @media screen and (min-width: 768px) {
+    
+    border-radius: 15px;
+    width: 85px;
+    height: 85px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+    
+    border-radius: 20px;
+    width: 136px;
+    height: 136px;
+    margin-bottom: 7px;
+    margin-left: 7px;
+    }
+}
+  
+.up {
+  margin-bottom: 15px;
+  @media screen and (min-width: 480px) {
+  margin-bottom: 30px;
+  }
+  
+  @media screen and (min-width: 768px) {
+  margin-bottom: 30px;
+  }
+  
+  @media screen and (min-width: 1280px) {
+  margin-bottom: 50px;
+  }
+}
+  
+.gallery__card_x2 { 
+
+    width: 83px;
+    height: 83px;
+  
+  @media screen and (min-width: 480px) {
+  
+    width: 110px;
+    height: 110px;
+    }
+ 
+  @media screen and (min-width: 768px) {
+    
+    width: 175px;
+    height: 175px;
+    }
+  
+  @media screen and (min-width: 1280px) {
+    
+    width: 285px;
+    height: 285px;
+    }
+}
+  
+  
