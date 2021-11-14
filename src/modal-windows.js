@@ -5,7 +5,7 @@
       modal: document.querySelector('[data-modal]'),
       openModalMaps: document.querySelector('.windows-mobile__button'),
       modalMaps:document.querySelector('.modal-maps'),
-      closeModalMaps:document.querySelector('.modal-maps__close'),
+      closeModalMaps:document.querySelector('[modal-maps__close]'),
     };
   
     refs.openModalBtn.addEventListener('click', toggleModal);

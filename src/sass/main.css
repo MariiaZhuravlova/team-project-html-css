@@ -1193,6 +1193,42 @@ img {
   margin-left: 13px;
 }
 
+.modal-maps__map {
+  margin: 15px;
+  width: 100%;
+  background-color: #FFF5F6;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-maps__map {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.modal-maps__text {
+  padding: 35px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-maps__text {
+    width: 45%;
+  }
+}
+
+.modal-maps__location {
+  padding: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-maps,
 .backdrop {
   position: fixed;
   top: 0;
@@ -1209,18 +1245,21 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-maps.is-hidden,
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
 
 @media screen and (min-width: 768px) {
+  .modal-maps,
   .backdrop {
     top: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .modal-maps,
   .backdrop {
     left: 0;
     width: 100%;
