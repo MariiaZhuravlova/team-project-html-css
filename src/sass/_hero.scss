@@ -5,11 +5,8 @@
   position: relative;
   height: 502px;
   background-color: $hero-bgr;
-  
-  @media screen and (max-width: 320px) {
-    overflow: hidden;
-  }
-}
+  overflow: hidden;
+ }
 .hero-text-thumb {
   position: absolute;
   margin-top: 193px;
