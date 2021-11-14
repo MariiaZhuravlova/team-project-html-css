@@ -2,19 +2,36 @@
   background: #fff5f6;
   padding-top: 125px;
 }
+
 .about-list {
   display: flex;
   flex-direction: column;
   padding: 0 60px 0 60px;
+  margin-bottom: 26px;
+  @media screen and (min-width: 768px) {
+    padding: 0px;
+    margin-bottom: 50px;
+  }
 }
+
 .title {
   font-family: 'Titan One';
   margin-bottom: 15px;
   font-size: 18px;
   line-height: calc(21 / 18);
+  letter-spacing: 0.02em;
   text-align: center;
   text-transform: uppercase;
   color: #ffa5ba;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: calc(30 / 26);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+    letter-spacing: 0.04em;
+  }
 }
 .headline {
   font-family: 'Titan One';
@@ -24,30 +41,59 @@
   text-align: center;
   text-transform: uppercase;
   color: #d41443;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: calc(55 / 48);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: calc(66 / 58);
+    letter-spacing: 0.06em;
+  }
 }
-.milk-cow {
-  display: block;
+.about-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding: 0 39px 0 36px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .milk-cow-img {
   padding: 0 20px 0 20px;
-  max-width: 280px;
+  width: 280px;
   margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    padding: 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 516px;
+  }
 }
 .about-subcontainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .cow-text-list {
   font-family: 'DM Sans';
   padding: 0 50px 0 50px;
-  margin: 12px 0 0 0;
+  margin: 12px auto 0 auto;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(20 / 12);
   color: #907e82;
   list-style: none;
   max-width: 320px;
+  @media screen and (min-width: 768px) {
+    padding: 50px 0px 0px 0px;
+    margin: 0px 0px 0px 17px;
+    width: 340px;
+    font-size: 14px;
+    line-height: calc(25 / 14);
+  }
 }
 .cow-text {
   margin-bottom: 20px;
@@ -58,16 +104,27 @@
 }
 .cow-text:last-child {
   margin-bottom: 17px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 45px;
+  }
 }
 .milk-overlay {
-  position: relative;
-  margin-top: -125px;
-  //height: 133px;
-  top: 50%;
-  left: 50%;
-  z-index: 100;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  @media screen and (max-width: 767px) {
+    position: relative;
+    margin-top: -125px;
+    height: 133px;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .about-readmore-button {
   margin: 0 94px 0 50px;

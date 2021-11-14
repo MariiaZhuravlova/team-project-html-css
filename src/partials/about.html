@@ -1,10 +1,18 @@
 <section class="about">
+    <div class="about-list">
+        <label class="title" for="tradition and love"> tradition and love</label>
+        <h1 class="headline"> how it’s made?</h>
+    </div>
     <div class="about-container">
-        <div class="about-list">
-            <label class="title"> tradition and love</label>
-            <h1 class="headline"> how it’s made?</h>
-            <a class="milk-cow" href=""><img class="milk-cow-img" src="./images/about/about-1m.png" alt="milk and cow" width="280" height="279"></a>
-        </div>
+        <picture>
+            <source srcset="./images/about/about-1d-min.png 1x, ./images/about/about-1d@2-min.png 2x" media="(min-width:1200px)"
+                type="image/png" />
+            <source srcset="./images/about/about-1t.png 1x, ./images/about/about-1t@2.png 2x" media="(min-width:768px)"
+                type="image/png" />
+            <source srcset="./images/about/about-1m.png 1x, ./images/about/about-1m@2.png 2x" media="(min-width:480px)"
+                type="image/png" />
+            <img class="milk-cow-img" src="./images/about/about-1d-min.png" alt="milk and cow" width="280" height="279">
+        </picture>
         <div class="about-subcontainer">
             <ul class="cow-text-list">
                 <li class="cow-text">
@@ -22,6 +30,12 @@
             </ul>
             <button class="about-readmore-button" type="button" data-modal-open>Read more</button>
         </div>
+        <picture>
+            <source srcset="./images/about/about-2d-min.png 1x, ./images/about/about-2d@2-min.png 2x" media="(min-width:1200px)"
+                type="image/png" />
+            <source srcset="./images/about/about-2m.png 1x, ./images/about/about-2m@2.png 2x" media="(min-width:480px)"
+                type="image/png" />
+            <img class="milk-overlay" src="./images/about/about-2d-min.png" alt="milk">
+        </picture>
     </div>
-    <img class="milk-overlay" src="./images/about/about-2m.png" alt="milk">
 </section>
