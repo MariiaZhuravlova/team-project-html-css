@@ -2073,7 +2073,6 @@ input[name='r'] {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
-    width: 50%;
   }
 }
 
@@ -2082,12 +2081,6 @@ input[name='r'] {
 }
 
 .modal-maps__location {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
 }
 
@@ -2100,10 +2093,33 @@ input[name='r'] {
 
 @media screen and (min-width: 480px) {
   .modal-maps__location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 480px;
     padding: 35px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-maps__location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-maps__location {
+    display: block;
   }
 }
 
@@ -2113,6 +2129,7 @@ input[name='r'] {
   top: 45px;
   left: 0;
   width: 100%;
+  z-index: 9;
   min-width: 320px;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
