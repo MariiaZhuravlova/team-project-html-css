@@ -1,6 +1,25 @@
+.section {
+  background-color: #fff5f6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 86px;
+  margin-bottom: 54px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 81px;
+    margin-bottom: 81px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 132px;
+    margin-bottom: 86px;
+  }
+}
 .contacts {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-left: -20px;
   margin-bottom: -20px;
 }
@@ -17,7 +36,7 @@
     flex-basis: calc(100% / 3 - 20px);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-left: 30px;
     flex-basis: calc(100% / 3 - 30px);
   }
@@ -26,6 +45,7 @@
 .contacts-item__block {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 44px 20px;
   font-weight: 500;
   font-size: 12px;
@@ -38,7 +58,7 @@
     line-height: calc(26 / 14);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding: 54px 44px;
     font-size: 16px;
     line-height: calc(30 / 16);
@@ -47,6 +67,8 @@
 
 .contacts-item__type {
   margin-bottom: 25px;
+  width: 45%;
+  text-align: center;
   color: #ffffff;
   background: #f0d1a5;
   background-size: cover;
@@ -56,17 +78,19 @@
 }
 
 .contacts-item__type--green {
+  width: 70%;
+  text-align: center;
   background: #c2e297;
 }
 
 .contacts-item__title {
   margin-bottom: 10px;
-  color: var($primary-text-color);
+  color: #000000;
 }
 
 .contacts-item__description {
   margin-bottom: 25px;
-  color: var($secondary-text-color);
+  color: #907e82;
 }
 
 .schedule {
@@ -82,13 +106,13 @@
 }
 
 .schedule__days {
-  color: var($primary-text-color);
+  color: #000000;
 }
 
 .schedule__wh {
-  color: var($rosy-text-color);
+  color: #ffa5ba;
 }
 
 .contact-us__link {
-  color: var($secondary-text-color);
+  color: #907e82;
 }
