@@ -1,0 +1,137 @@
+.outer-circle {
+  // position: relative;
+  width: 346px;
+  height: 344px;
+  margin-top: 83px;
+  margin-left: 16px;
+  border-radius: 50%;
+  background-color: #ffa5ba;
+  transition: all 1s ease-out;
+  // transition-delay: 0.5s;
+
+  overflow: hidden;
+  // pointer-events: none;
+
+  &:hover {
+    // transform: scale(1.1);
+
+    background-color: #e17992;
+  }
+
+  @media screen and (min-width: $mobile) {
+    margin-top: 70px;
+    margin-left: 120px;
+    width: 324px;
+    height: 324px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-top: 31px;
+    margin-left: 307px;
+    width: 324px;
+    height: 324px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 52px;
+    margin-left: 360px;
+    width: 538px;
+    height: 538px;
+  }
+}
+.inner-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-basis: 950px;
+  border-radius: 50%;
+  // opacity: 0;
+
+  transition: all 1s ease-out;
+
+  &:hover {
+    opacity: 100;
+  }
+  border: 1px solid #ffa5ba;
+}
+.inner-icon {
+  margin: 5px;
+  // width: px;
+  // height: px;
+
+  @media screen and (min-width: $tablet) {
+    // width: 65px;
+    // height: 80px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 65px;
+    height: 80px;
+  }
+}
+.iconone {
+  fill: #d41443;
+}
+.icontwo {
+  fill: #d41443;
+}
+.iconthree {
+  fill: #d41443;
+  transition: all 0.1s ease-in;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.iconfour {
+  fill: #d41443;
+}
+.iconfive {
+  fill: #d41443;
+}
+.iconsix {
+  fill: #d41443;
+}
+.iconseven {
+  fill: #d41443;
+}
+.lineone {
+  @extend .inner-icon;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.linetwo {
+  @extend .inner-icon;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.linethree {
+  @extend .inner-icon;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.linefour {
+  @extend .inner-icon;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.linefive {
+  @extend .inner-icon;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.linesix {
+  @extend .inner-icon;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
