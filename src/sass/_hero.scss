@@ -8,18 +8,22 @@
   overflow: hidden;
   @media screen and (min-width: $tablet) {
     height: 399px;
-    
   }
   @media screen and (min-width: $desktop) {
     height: 665px;
-    
   }
- }
+}
 .hero-text-thumb {
   position: absolute;
   margin-top: 193px;
   padding: 0;
   z-index: 2;
+  @media screen and (min-width: $tablet) {
+    margin-top: 102px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 171px;
+  }
 }
 .hero-text {
   font-family: Titan One;
@@ -30,6 +34,14 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $hero-text;
+  @media screen and (min-width: $tablet) {
+    font-size: 22px;
+    line-height: (25 / 22 * 100%);
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 38px;
+    line-height: (38 / 44 * 100%);
+  }
 }
 .hero-title {
   font-family: Titan One;
@@ -39,6 +51,14 @@
   line-height: 0.96;
   text-transform: uppercase;
   color: $accent-color;
+  @media screen and (min-width: $tablet) {
+    font-size: 34px;
+    line-height: (31 / 34 * 100%);
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
+    line-height: (58 / 52 * 100%);
+  }
 }
 .hero-btn-item {
   display: inline-block;
@@ -50,12 +70,21 @@
   margin-right: 8px;
   background-color: $accent-color;
   padding-top: auto;
+  @media screen and (min-width: $desktop) {
+    width: 102px;
+    height: 40px;
+    padding-top: 10px;
+  }
   &:last-child {
     margin-right: 0px;
     width: 82.8px;
     height: 24px;
     color: $accent-color;
     background-color: $hero-text;
+    @media screen and (min-width: $desktop) {
+      width: 138px;
+      height: 40px;
+    }
     .hero-btn-link {
       color: $accent-color;
     }
@@ -73,6 +102,12 @@
   display: flex;
   align-items: center;
   margin-top: 19px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 25px;
+  }
 }
 .hero-btn-link {
   font-family: DM Sans;
@@ -82,10 +117,13 @@
   line-height: 1.25;
   text-align: center;
   color: $hero-text;
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: (14 / 18 * 100%);
+  }
 }
 .hero-image {
   z-index: 1;
-  
 }
 .hero-img {
   display: block;
@@ -95,7 +133,14 @@
   margin-left: 77px;
   fill: transparent;
   z-index: 1;
- 
+  @media screen and (min-width: $tablet) {
+    max-width: 143px;
+    height: 100%;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 236px;
+    height: 100%;
+  }
 }
 .hero-circle {
   position: absolute;
@@ -110,22 +155,21 @@
     margin-top: 70px;
     margin-left: 120px;
     width: 324px;
-  height: 324px;
+    height: 324px;
   }
   @media screen and (min-width: $tablet) {
     margin-top: 31px;
-    margin-left: 273px;
+    margin-left: 307px;
     width: 324px;
     height: 324px;
   }
-  
+
   @media screen and (min-width: $desktop) {
     margin-top: 52px;
     margin-left: 360px;
     width: 538px;
     height: 538px;
   }
-  
 }
 .hero-img-composition {
   position: absolute;
@@ -136,11 +180,13 @@
   @media screen and (min-width: $mobile) {
     margin-top: 31px;
     margin-left: 115px;
-    
   }
   @media screen and (min-width: $tablet) {
     margin-top: 63px;
-    margin-left: 344px;
-    
+    margin-left: 301px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 108px;
+    margin-left: 402px;
   }
 }

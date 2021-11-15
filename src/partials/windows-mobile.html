@@ -1,16 +1,85 @@
-<section class="windows-mobile">
-    <div class="container">
-        
-            <button class="windows-mobile__button" type="submit">Our Locations
+<section class="section-mobile">
+    <div class="container windows-mobile">
+        <div class="windows-mobile">
+            <button class="windows-mobile__button" type="button">Our Locations
                 <svg class="windows-mobile__svg">
-                    <use href="./images/sprite.svg#vector "></use>
+                    <use href="./images/sprite.svg#vector " ></use>
                 </svg>
             </button>
-            <button class="windows-mobile__button--white" type="submit">Franchise
-               <svg class="windows-mobile__svg">
-                   <use href="./images/sprite.svg#vector "></use>
-               </svg>
-           </button>
-      
+            <button  class="windows-mobile__button--white" type="button">Franchise
+                <svg class="windows-mobile__svg--white" >
+                    <use href="./images/sprite.svg#vector-pink "></use>
+                </svg>
+            </button>
+        </div>
+            <div class="modal-maps is-hidden">
+                <button modal-maps__close class="modal__button">
+                    <svg class="modal__picture">
+                        <use class="modal__icon" href="./images/sprite.svg#close-black">
+                        </use>
+                    </svg>
+                 </button>
+
+                <div class="modal-maps__map">
+                    <p class="modal-maps__text">The first prototype of the frosty buv inventions in China. Truly unbelievable, there are thousands of rocks on the rakhovu frost history: 4 or 5 thousand. Emperor Tang, having ruled at that hour, shitty transferring the cake. Vin having ordered his servants to come up with a strain, as it would cool down in the heat of the day. Todi confectioners proponated a novelty to the ruler: licorice narizan fruits (lichi, tangerine, yangmey) zmishany with a snazy snig. This dessert will become a favorite of the emperor's gourmand and hundreds of rocks are kept in secret. Forward the recipe for fruit ice buv guesses in the Chinese book "Shih-ching". Vvazhaєtsya, scho koriguvav the book is not hto іnshiy, like Confucius himself.
+                        And you can buy it with us for the address:</p>
+                   <span class="modal-maps__location"> <iframe  
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380513.7159859942!2d-88.01214778988322!3d41.83339250495681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2z0KfQuNC60LDQs9C-LCDQmNC70LvQuNC90L7QudGBLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1636919484830!5m2!1sru!2sua"
+  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></span>
+                </div>
+            </div>
+           
+           <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button data-modal-close class="modal__button">
+                    <svg class="modal__picture">
+                        <use class="modal__icon" href="./images/sprite.svg#close-black">
+                        </use>
+                    </svg>
+                 </button>
+        <form class="modal__form" name="signup_form" autocomplete="on" novalidate>
+            <p class="modal__title" >Leave your details, we will call you back</p>
+                    <div class="modal__list">
+                <label class="modal__label" for="name">
+            Name </label> 
+            <span class="modal__wrapper">
+            <input class="modal__input" type="text" name="name" id="name"  />
+            <svg class="modal__svg" style="width: 18px; height: 18px; "><use class="modal__noname" href="./images/sprite.svg#person-black" ></use></svg> 
+            </span>
+            </div>
+            <div class="modal__list">
+                <label class="modal__label" for="phone">
+            Phone </label>
+            <span class="modal__wrapper">
+            <input class="modal__input" type="tel" name="tel" id="phone" />
+            <svg class="modal__svg" style="width: 18px; height: 18px; "><use class="modal__noname"  href="./images/sprite.svg#phone-black" ></use></svg>
+            </span> 
+            </div>
+                <div class="modal__list">
+                <label class="modal__label" for="email">
+            Mail </label>
+            <span class="modal__wrapper">
+            <input class="modal__input" type="email" name="email" id="email" /> 
+            <svg class="modal__svg" style="width: 18px; height: 18px; "><use class="modal__noname"  href="./images/sprite.svg#email-black" ></use></svg>
+            </span> 
+            </div>
+                <div class="modal__list">
+                <label class="modal__label" for="coment">
+            You comment </label>
+            <span class="modal__wrapper"> 
+            <textarea class="modal__textarea" name="comment" id="coment"  placeholder="Введите текст" ></textarea></span> 
+            <input  type="checkbox" name="contract" value="contract" id="check" class="modal__checkbox"  required />
+            <label for="check" class="modal__check">
+            <span>
+                <svg class="modal__noname" style="width: 11px; height: 8px; ">
+                    <use class=""  href="./images/sprite.svg#check" >
+                    </use>
+                </svg>
+            </span>
+            I agree with the mailing and accept 
+            <a href="">  "Terms of the contract" </a> </label>
+                <button class="modal__send" type="submit">Send</button></div>
+        </form>
+        </div></div></div>
     </div>
 </section>
