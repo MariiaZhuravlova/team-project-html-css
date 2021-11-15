@@ -1,14 +1,15 @@
 .customers {
-  height: auto;
-  position: relative;
-  margin-top: 30px;
-  margin-bottom: 86px;
+  padding-top: 80px;
+  padding-bottom: 86px;
+  @media screen and(min-width: $tablet) {
+    padding-top: 121px;
+    padding-bottom: 119px;
+  }
+  @media screen and(min-width: $tablet) {
+    padding-top: 123px;
+    padding-bottom: 132px;
+  }
 }
-// .content-g {
-//   width: 100%;
-//   max-width: 1280px;
-//   margin: 0 auto;
-// }
 
 .slider {
   max-width: 1280px;
@@ -19,7 +20,6 @@
 
 .navigation {
   position: absolute;
-  // bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
