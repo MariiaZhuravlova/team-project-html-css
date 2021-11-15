@@ -19,4 +19,4 @@
     function getModalMaps (){
       refs.modalMaps.classList.toggle('is-hidden');
     }
-  })();
+})();
