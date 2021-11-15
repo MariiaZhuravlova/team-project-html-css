@@ -1,7 +1,7 @@
-<section class="about">
+<section class="about about-section">
     <div class="about-list">
-        <label class="title" for="tradition and love"> tradition and love</label>
-        <h1 class="headline"> how it’s made?</h>
+        <label class="about-list__title" for="tradition and love"> tradition and love</label>
+        <h1 class="about-list__headline"> how it’s made?</h>
     </div>
     <div class="about-container">
         <picture>
@@ -28,14 +28,18 @@
                 </li>
                 <li class="cow-text">Aliquam erat volutpat. Aenean accumsan.</li>
             </ul>
-            <button class="about-readmore-button" type="button" data-modal-open>Read more</button>
+            <button class="about-readmore-button" type="button" data-modal-open>Read more
+                <svg class="about-readmore-img" width="8" height="8">
+                    <use href="./images/sprite.svg#icon-Vector-btn"></use>
+                </svg>
+            </button>
         </div>
-        <picture>
+        <!-- <picture>
             <source srcset="./images/about/about-2d-min.png 1x, ./images/about/about-2d@2-min.png 2x" media="(min-width:1200px)"
                 type="image/png" />
             <source srcset="./images/about/about-2m.png 1x, ./images/about/about-2m@2.png 2x" media="(min-width:480px)"
                 type="image/png" />
             <img class="milk-overlay" src="./images/about/about-2d-min.png" alt="milk">
-        </picture>
+        </picture> -->
     </div>
 </section>
