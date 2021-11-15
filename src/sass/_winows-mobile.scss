@@ -1,48 +1,42 @@
-.windows-mobile{
-    display: flex;
+.section-mobile{
+    
     background: #FFF5F6;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 54px;
-    margin-bottom: 113px;
-        @media screen and (min-width: $mobile){
-            flex-direction: row;
-        align-items: normal;}
+    padding-top: 54px;
+    padding-bottom: 113px;
+       
     }
+    .windows-mobile{
+        display: flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items: center;
+   @media screen and(min-width: $tablet) {
+     flex-direction:row;
+   }
+   }
 .windows-mobile__button{
     width: 161.45px;
     height: 44px;
     background: #D41342;
     border-radius: 22px;
     font-family: DM Sans;
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
     display: flex;
-   flex-direction:row;
-   align-items: center;
-   flex-wrap: wrap;
-   margin-left: auto;
-   margin-right: auto;
-   justify-content: center;
-   padding-left: 17px;
-   
-    
-
+    align-items: center;
+    justify-content: center;
     color: #FFFFFF;
     margin-bottom: 10px;
-    
-    border: transparent;
+    border: none;
     
     @media screen and (min-width: $tablet){
+       margin-bottom: 0;
         margin-right: 15px; 
+        width: 191.5px;
     }
-        @media screen and (max-width: $tablet){
-        width: 191px;
-        }
-        @media screen and (max-width: $desktop){
-            width: 191px;
+     @media screen and (max-width: $desktop){
+            width: 198px;
             }
 }
 .windows-mobile__button--white{
@@ -53,26 +47,18 @@
     height: 44px;
     border-radius: 22px;
     font-family: DM Sans;
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-   margin-left: auto;
-   margin-right: auto;
-   justify-content: center;
-   padding-left: 32px;
-   border: transparent;
+    border: none;
    
         @media screen and (max-width: $tablet){
                 width: 174.05px;}
         
         @media screen and (max-width: $desktop){
-                width: 180px;}
-        @media screen and (min-width: $tablet){margin-left: 0;}
-        @media screen and (min-width: $desktop){margin-left: 0;}
+                width: 180px;
+            }
+        
 }
 
 .windows-mobile__svg{
@@ -91,7 +77,3 @@
     background:transparent ;
     margin-left: 13px;
 }
-
-
-
-
