@@ -39,6 +39,11 @@
             width: 198px;
             }
 }
+.windows-mobile__button:hover,
+.windows-mobile__button:focus{
+    background: #ffffff;
+    color: #D41342;
+}
 .windows-mobile__button--white{
 
     color: #D41443;
@@ -60,7 +65,11 @@
             }
         
 }
-
+.windows-mobile__button--white:hover,
+.windows-mobile__button--white:focus{
+    color: #FFFFFF;
+    background: #D41342;
+}
 .windows-mobile__svg{
     width: 10px;
     height: 15px;
