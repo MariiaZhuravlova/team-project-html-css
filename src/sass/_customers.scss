@@ -214,3 +214,36 @@ input[name='r'] {
   margin-top: 70px;
   display: flex;
 }
+.slid-control {
+  // background: rgba(0, 0, 0, 0.28);
+  // border-radius: 50%;
+  color: #393939;
+  cursor: pointer;
+  display: none;
+  // font-size: 40px;
+  height: 50%;
+  // line-height: 35px;
+  position: absolute;
+  top: 40%;
+  // -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  // -ms-transform: translate(0, -50%);
+  // transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+.slid-control.prev {
+  left: 2%;
+}
+.slid-control.next {
+  right: 2%;
+}
+#r1:checked ~ .control-2,
+// #r1:checked ~ .control-3,
+#r2:checked ~ .control-3,
+// #r2:checked ~ .control-1,
+// #r3:checked ~ .prev.control-2,
+#r3:checked ~ .control-1 {
+  display: block;
+}

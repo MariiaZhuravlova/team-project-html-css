@@ -1,9 +1,10 @@
 <section class="customers">
     <div class="content-g">
         <div class="slider">
-            <input type="radio" name="r" id="r1" checked />
-            <input type="radio" name="r" id="r2" />
-            <input type="radio" name="r" id="r3" />
+            <input type="radio" name="r" id="r1" aria-hidden="true" hidden="" checked />
+            <input type="radio" name="r" id="r2" aria-hidden="true" hidden="" />
+            <input type="radio" name="r" id="r3" aria-hidden="true" hidden="" />
+            
             <div class="slides">               
 
 
@@ -54,16 +55,24 @@
                     </span>
                 </div>
             </div>
+            
+            <label for="r1" class="slid-control prev control-1"></label>
+            <label for="r2" class="slid-control next control-2"></label>
+            <label for="r3" class="slid-control prev control-3"></label>
+
+            <label for="r1" class="slid-control next control-1"></label>
+            <label for="r2" class="slid-control prev control-2"></label>
+            <label for="r3" class="slid-control next control-3"></label>
             <div class="navigation">
-                <label for="r1" class="bar current">
-                    <!-- <label for="agreement" class="form_checkbox">
+            
+                <label for="r1" class="bar">
+                             
                         
-                        <input type="submit" id="agreement" class="agreement hidden_visual" > -->
                     <svg class="">
                         <use href="./images/sprite.svg#icon-Vector-7" width="8" height="8"></use>
                     </svg>
                 </label>
-                <!-- </label> -->
+                
                 <label for="r2" class="bar">
                     <svg class="">
                         <use href="./images/sprite.svg#icon-Vector-7" width="8" height="8"></use>
