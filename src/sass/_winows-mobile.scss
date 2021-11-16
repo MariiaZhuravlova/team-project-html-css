@@ -1,8 +1,13 @@
 .section-mobile{
     
     background: #FFF5F6;
-    padding-top: 54px;
     padding-bottom: 113px;
+  @media screen and(min-width: $tablet) {
+  padding-bottom: 158px;
+  }
+   @media screen and(min-width: $tablet) {
+  padding-bottom: 165px;
+  }
        
     }
     .windows-mobile{
@@ -39,6 +44,11 @@
             width: 198px;
             }
 }
+.windows-mobile__button:hover,
+.windows-mobile__button:focus{
+    background: #ffffff;
+    color: #D41342;
+}
 .windows-mobile__button--white{
 
     color: #D41443;
@@ -60,7 +70,11 @@
             }
         
 }
-
+.windows-mobile__button--white:hover,
+.windows-mobile__button--white:focus{
+    color: #FFFFFF;
+    background: #D41342;
+}
 .windows-mobile__svg{
     width: 10px;
     height: 15px;
