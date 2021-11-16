@@ -1,12 +1,27 @@
+.container {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+  }
+}
+
 .customers {
+  // max-width: 1280px;
+  width: 100%;
   padding-top: 80px;
   padding-bottom: 86px;
   position: relative;
-  @media screen and(min-width: $tablet) {
+  @media screen and (min-width: $tablet) {
+    // width: auto;
     padding-top: 121px;
     padding-bottom: 119px;
   }
-  @media screen and(min-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     padding-top: 123px;
     padding-bottom: 132px;
   }
@@ -17,7 +32,14 @@
   width: 100%;
   height: 550px;
   overflow: hidden;
-  // position: relative;
+  position: relative;
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+    max-width: 768px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+  }
 }
 
 .navigation {
@@ -26,14 +48,14 @@
   top: 96%;
   transform: translateX(-50%);
   display: flex;
-  @media screen and(min-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     left: 49%;
-    top: 70%;
+    top: 80%;
   }
 
-  @media screen and(min-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     left: 49%;
-    top: 65%;
+    top: 75%;
   }
 }
 // .point {
@@ -156,7 +178,7 @@ input[name='r'] {
   z-index: 2;
 }
 .gradient {
-  max-width: 1280px;
+  // max-width: 1280px;
 
   height: auto;
   background: repeating-linear-gradient(#fafafa 0, #fafafa 30px, #e1e1e1 30px, #e1e1e1 31px);
@@ -183,11 +205,11 @@ input[name='r'] {
     width: 21px;
     margin: 10px;
     border-bottom: 4px dotted #c7133e;
-    @media screen and(min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
       left: auto;
       top: 180%;
     }
-    @media screen and(min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
       left: auto;
       top: 180%;
     }
@@ -209,15 +231,24 @@ input[name='r'] {
 }
 .card {
   padding: 20px;
-  width: 100%;
+  // max-width: 1280px;
+  // width: 100%;
   background-color: #fafafa;
 
-  margin: 30px auto;
+  margin: 30px, auto;
   align-items: center;
   justify-content: center;
   display: flex;
   box-sizing: border-box;
   position: relative;
+  @media screen and (max-width: 767px) {
+    // width: 100%;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    // max-width: 1280px;
+    // width: 100%;
+  }
+
   &::after {
     content: '';
     font-size: 100px;
@@ -254,15 +285,16 @@ input[name='r'] {
   height: 50%;
   line-height: 35px;
   position: absolute;
-  top: 55%;
+  top: 50%;
   // -webkit-transform: translate(0, -50%);
   cursor: pointer;
   // -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  transform: translate(0, -70%);
   text-align: center;
   width: 40px;
   z-index: 10;
-  @media screen and(min-width: $tablet) {
+
+  @media screen and (min-width: $tablet) {
     top: 43%;
     height: 25%;
   }
@@ -279,11 +311,11 @@ input[name='r'] {
   background-size: 10px;
 
   @media screen and(min-width: $tablet) {
-    left: 3%;
+    left: 2%;
     background-size: 10px;
   }
   @media screen and(min-width: $desktop) {
-    left: 8%;
+    left: 2%;
     background-size: 15px;
   }
 }
@@ -294,11 +326,10 @@ input[name='r'] {
   background-position: center;
   background-size: 10px;
   @media screen and(min-width: $tablet) {
-    right: 3%;
-    background-size: 10px;
+    right: 2%;
   }
   @media screen and(min-width: $desktop) {
-    right: 8%;
+    right: 2%;
     background-size: 15px;
   }
 }
