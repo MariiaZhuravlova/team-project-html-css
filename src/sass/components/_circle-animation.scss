@@ -5,12 +5,14 @@
   margin-left: 16px;
   border-radius: 50%;
   background-color: #ffa5ba;
-  transition: all 1s ease-out;
+  transition: all 0.8s ease-out;
+  animation-delay: 1s;
   // transition-delay: 0.5s;
 
   overflow: hidden;
 
   &:hover {
+    border: 2px solid palevioletred;
     transform: scale(1.1);
     background-color: #e17992;
   }
@@ -39,6 +41,7 @@
   align-items: center;
   flex-wrap: wrap;
   flex-basis: 950px;
+  // height: auto;
 
   border-radius: 50%;
   overflow: hidden;
@@ -48,16 +51,18 @@
   &:hover {
     opacity: 100;
   }
-  border: 1px solid #ffa5ba;
 }
 .inner-icon {
   margin: 5px;
+  border: 1px solid #ffa5ba;
   // width: px;
   // height: px;
 
   @media screen and (min-width: $tablet) {
-    // width: 65px;
-    // height: 80px;
+    // width: 324px;
+    // height: 324px;
+    width: 30px;
+    height: 60px;
   }
   @media screen and (min-width: $desktop) {
     width: 65px;
