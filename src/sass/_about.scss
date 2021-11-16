@@ -71,7 +71,7 @@
 .milk-cow-img {
   padding: 0 20px 0 20px;
   width: 280px;
-  margin: 0 auto;
+  // margin: 0 auto;
   @media screen and (min-width: $tablet) {
     width: 340px;
     padding: 0px;
@@ -81,7 +81,7 @@
   }
   @media screen and (min-width: $desktop) {
     width: 516px;
-    top: 5px;
+    top: 30px;
     left: -5px;
   }
 }
@@ -167,15 +167,21 @@
   background-image: url(../images/about/about-2m.png);
   background-repeat: no-repeat;
   background-size: contain;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/about/about-2m@2.png);
+  }
   @media screen and (min-width: $tablet) {
     background-image: none;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: block;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: bottom -70px right 0px;
+    background-position: bottom -100px right 0px;
     background-image: url(../images/about/about-2d-min.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/about-2d-min.png);
+    }
   }
 }
 
@@ -222,7 +228,7 @@
   right: 8px;
   cursor: pointer;
   color: $hero-text;
-
+  background-color: $bgc-mob-menu;
   .close-btn-icon {
     width: 17px;
     height: 17px;
