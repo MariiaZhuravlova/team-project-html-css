@@ -1,5 +1,4 @@
 .outer-circle {
-  // position: relative;
   width: 346px;
   height: 344px;
   margin-top: 83px;
@@ -10,14 +9,11 @@
   // transition-delay: 0.5s;
 
   overflow: hidden;
-  // pointer-events: none;
 
   &:hover {
-    // transform: scale(1.1);
-
+    transform: scale(1.1);
     background-color: #e17992;
   }
-
   @media screen and (min-width: $mobile) {
     margin-top: 70px;
     margin-left: 120px;
@@ -30,7 +26,6 @@
     width: 324px;
     height: 324px;
   }
-
   @media screen and (min-width: $desktop) {
     margin-top: 52px;
     margin-left: 360px;
@@ -44,11 +39,12 @@
   align-items: center;
   flex-wrap: wrap;
   flex-basis: 950px;
+
   border-radius: 50%;
-  // opacity: 0;
+  overflow: hidden;
+  opacity: 0;
 
   transition: all 1s ease-out;
-
   &:hover {
     opacity: 100;
   }
