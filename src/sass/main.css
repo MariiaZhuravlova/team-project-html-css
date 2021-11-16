@@ -1956,6 +1956,12 @@ input[name='r'] {
   color: #FFFFFF;
   margin-bottom: 10px;
   border: none;
+  -webkit-transition-property: fill, background-color, border;
+  transition-property: fill, background-color, border;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -1976,6 +1982,7 @@ input[name='r'] {
 .windows-mobile__button:focus {
   background: #ffffff;
   color: #D41342;
+  fill: #D41342;
 }
 
 .windows-mobile__button--white {
@@ -1989,6 +1996,12 @@ input[name='r'] {
   font-size: 16px;
   line-height: 1.31;
   border: none;
+  -webkit-transition-property: fill, background-color, border;
+  transition-property: fill, background-color, border;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (max-width: 768px) {
@@ -2006,6 +2019,7 @@ input[name='r'] {
 .windows-mobile__button--white:hover,
 .windows-mobile__button--white:focus {
   color: #FFFFFF;
+  fill: #FFFFFF;
   background: #D41342;
 }
 
