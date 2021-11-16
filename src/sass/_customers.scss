@@ -1,48 +1,82 @@
-.customers {
-  height: auto;
-  position: relative;
-  margin-top: 30px;
-  margin-bottom: 86px;
+.container {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+  }
 }
-// .content-g {
-//   width: 100%;
-//   max-width: 1280px;
-//   margin: 0 auto;
-// }
+
+.customers {
+  // max-width: 1280px;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 86px;
+  position: relative;
+  @media screen and (min-width: $tablet) {
+    // width: auto;
+    padding-top: 121px;
+    padding-bottom: 119px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 123px;
+    padding-bottom: 132px;
+  }
+}
 
 .slider {
   max-width: 1280px;
   width: 100%;
   height: 550px;
   overflow: hidden;
+  position: relative;
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+    max-width: 768px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+  }
 }
 
 .navigation {
   position: absolute;
-  // bottom: 16px;
   left: 50%;
+  top: 96%;
   transform: translateX(-50%);
   display: flex;
-}
-.point {
-  display: inline;
-  margin-right: 10px;
-  background-color: #c7133e;
-  height: 4px;
-  width: 4px;
+  @media screen and (min-width: $tablet) {
+    left: 49%;
+    top: 80%;
+  }
 
-  opacity: 0.5;
-  border-radius: 10px;
-  text-align: center;
-  margin-bottom: 30px;
+  @media screen and (min-width: $desktop) {
+    left: 49%;
+    top: 75%;
+  }
 }
-.title {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  margin: auto;
-  justify-content: center;
-}
+// .point {
+//   display: inline;
+//   margin-right: 10px;
+//   background-color: #c7133e;
+//   height: 4px;
+//   width: 4px;
+
+//   opacity: 0.5;
+//   border-radius: 10px;
+//   text-align: center;
+//   margin-bottom: 30px;
+// }
+// .title {
+//   display: flex;
+//   text-align: center;
+//   align-items: center;
+//   margin: auto;
+//   justify-content: center;
+// }
 
 .bar {
   height: 8px;
@@ -50,7 +84,7 @@
   margin: 6px;
   cursor: pointer;
   background-color: #d9d9d9;
-  opacity: 1.5;
+  opacity: 1;
   border-radius: 10px;
   // transition: all 0.4s ease;
   position: relative;
@@ -58,9 +92,9 @@
 
 .bar svg {
   display: none;
-  height: 20px;
-  width: 20px;
-  opacity: 2;
+  height: 10px;
+  width: 10px;
+  opacity: 10;
 }
 
 // .bar {
@@ -90,11 +124,12 @@ input[name='r'] {
   width: 400%;
   height: 100%;
   display: flex;
+  position: relative;
 }
 .slide {
   width: 25%;
   transition: all 0.6s ease;
-  //   position: relative;
+  // position: relative;
 }
 .slide img {
   width: 85px;
@@ -116,18 +151,21 @@ input[name='r'] {
   margin-left: -50%;
 }
 
-#r4:checked ~ .slides .s1 {
-  margin-left: -75%;
-}
+// #r4:checked ~ .slides .s1 {
+//   margin-left: -75%;
+// }
 
 #r1:checked ~ .navigation [for='r1'] svg {
   display: block;
+  transform: scale(1.1);
 }
 #r2:checked ~ .navigation [for='r2'] svg {
   display: block;
+  transform: scale(1.1);
 }
 #r3:checked ~ .navigation [for='r3'] svg {
   display: block;
+  transform: scale(1.1);
 }
 
 .text {
@@ -140,7 +178,7 @@ input[name='r'] {
   z-index: 2;
 }
 .gradient {
-  max-width: 1280px;
+  // max-width: 1280px;
 
   height: auto;
   background: repeating-linear-gradient(#fafafa 0, #fafafa 30px, #e1e1e1 30px, #e1e1e1 31px);
@@ -164,36 +202,53 @@ input[name='r'] {
     background-size: contain;
 
     height: 4px;
-    width: 20px;
-    margin: 6px;
+    width: 21px;
+    margin: 10px;
     border-bottom: 4px dotted #c7133e;
+    @media screen and (min-width: $tablet) {
+      left: auto;
+      top: 180%;
+    }
+    @media screen and (min-width: $desktop) {
+      left: auto;
+      top: 180%;
+    }
   }
 
-  &::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 147%;
-    transform: translate(-50%, -120%);
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   left: 50%;
+  //   top: 147%;
+  //   transform: translate(-50%, -120%);
 
-    display: block;
-    // width: 30px;
-    height: 4px;
-    margin: 6px;
-    border-bottom: 4px dotted #c7133e;
-  }
+  //   display: block;
+  //   // width: 30px;
+  //   height: 4px;
+  //   margin: 6px;
+  //   border-bottom: 4px dotted #c7133e;
+  // }
 }
 .card {
   padding: 20px;
-  width: 100%;
+  // max-width: 1280px;
+  // width: 100%;
   background-color: #fafafa;
 
-  margin: 30px auto;
+  margin: 30px, auto;
   align-items: center;
   justify-content: center;
   display: flex;
   box-sizing: border-box;
   position: relative;
+  @media screen and (max-width: 767px) {
+    // width: 100%;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    // max-width: 1280px;
+    // width: 100%;
+  }
+
   &::after {
     content: '';
     font-size: 100px;
@@ -213,6 +268,12 @@ input[name='r'] {
   justify-content: center;
   margin-top: 70px;
   display: flex;
+  @media screen and(min-width: $tablet) {
+    margin-top: 60px;
+  }
+  @media screen and(min-width: $desktop) {
+    margin-top: 60px;
+  }
 }
 .slid-control {
   // background: rgba(0, 0, 0, 0.28);
@@ -220,24 +281,57 @@ input[name='r'] {
   color: #393939;
   cursor: pointer;
   display: none;
-  // font-size: 40px;
+  font-size: 40px;
   height: 50%;
-  // line-height: 35px;
+  line-height: 35px;
   position: absolute;
-  top: 40%;
+  top: 50%;
   // -webkit-transform: translate(0, -50%);
   cursor: pointer;
   // -ms-transform: translate(0, -50%);
-  // transform: translate(0, -50%);
+  transform: translate(0, -70%);
   text-align: center;
   width: 40px;
   z-index: 10;
+
+  @media screen and (min-width: $tablet) {
+    top: 43%;
+    height: 25%;
+  }
+  @media screen and(min-width: $desktop) {
+    top: 43%;
+    height: 25%;
+  }
 }
 .slid-control.prev {
   left: 2%;
+  background-image: url(../images/customer_reviews/vector-left.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+
+  @media screen and(min-width: $tablet) {
+    left: 2%;
+    background-size: 10px;
+  }
+  @media screen and(min-width: $desktop) {
+    left: 2%;
+    background-size: 15px;
+  }
 }
 .slid-control.next {
   right: 2%;
+  background-image: url(../images/customer_reviews/vector-right.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  @media screen and(min-width: $tablet) {
+    right: 2%;
+  }
+  @media screen and(min-width: $desktop) {
+    right: 2%;
+    background-size: 15px;
+  }
 }
 #r1:checked ~ .control-2,
 // #r1:checked ~ .control-3,
