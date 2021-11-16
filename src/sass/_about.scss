@@ -6,10 +6,8 @@
 .about-list {
   display: flex;
   flex-direction: column;
-  padding: 0 60px 0 60px;
   margin-bottom: 26px;
   @media screen and (min-width: $tablet) {
-    padding: 0px;
     margin-bottom: 50px;
   }
   @media screen and (min-width: $desktop) {
@@ -57,13 +55,11 @@
   z-index: 10;
   @media screen and (min-width: $tablet) {
     display: flex;
-    padding: 0 30px 0 30px;
     align-items: center;
     justify-content: center;
   }
   @media screen and (min-width: $desktop) {
     display: flex;
-    padding: 0 39px 0 36px;
     align-items: center;
     justify-content: center;
   }
@@ -86,6 +82,7 @@
     left: -5px;
   }
 }
+
 .about-subcontainer {
   display: flex;
   flex-direction: column;
@@ -144,16 +141,22 @@
 }
 
 .about-readmore-button {
+  font-family: DM Sans;
   margin: 0 94px 0 50px;
   align-content: center;
+  font-size: 14px;
+  line-height: 18px;
   width: 176px;
   height: 44px;
-  background: $hero-text;
   border-radius: 22px;
   border-color: transparent;
+  cursor: pointer;
   color: $accent-color;
+  background-color: $hero-text;
   @media screen and (min-width: $tablet) {
     margin: 0px auto 0px 0px;
+    font-size: 16px;
+    line-height: 21px;
   }
 }
 .about-readmore-img {
@@ -186,7 +189,6 @@
     }
   }
 }
-
 .backdrop {
   position: fixed;
   z-index: 9999;
@@ -229,15 +231,20 @@
   top: 8px;
   right: 8px;
   cursor: pointer;
-  color: $hero-text;
+  fill: $hero-text;
   background-color: $bgc-mob-menu;
-  .close-btn-icon {
-    width: 17px;
-    height: 17px;
-  }
+}
+.close-btn-icon {
+  width: 17px;
+  height: 17px;
 }
 
 .close-btn:hover,
 .close-btn:focus {
-  color: $accent-color;
+  fill: $accent-color;
+}
+.modal-text {
+  font-size: 26px;
+  line-height: calc(30 / 26);
+  letter-spacing: 0.04em;
 }
