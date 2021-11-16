@@ -1,4 +1,3 @@
-@import './components/circle-animation';
 .hero {
   background-color: $hero-bgr;
 }
@@ -92,15 +91,11 @@
     &:hover,
     &:focus {
       background-color: #ecebeb;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
   &:hover,
   &:focus {
     background-color: #c7133e;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .hero-btn-list {
@@ -128,17 +123,16 @@
   }
 }
 .hero-image {
-  // z-index: 1;
+  z-index: 1;
 }
 .hero-img {
-  display: flex;
+  display: block;
   max-width: 171px;
   height: 100%;
   // margin-top: 9px;
   margin-left: 77px;
   fill: transparent;
   z-index: 1;
-  // pointer-events: none;
   @media screen and (min-width: $tablet) {
     max-width: 143px;
     height: 100%;
@@ -243,8 +237,6 @@
   &:hover,
   &:focus {
     background-color: #ecebeb;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and (min-width: $desktop) {
     width: 26px;
