@@ -1,6 +1,7 @@
 
 .gallery {
-    background-image: linear-gradient(
+  padding-top: 15px;
+  background-image: linear-gradient(
         to top,
         #fff 55%,
         #fff5f6 45%);
@@ -13,7 +14,7 @@
     justify-content: center;
     align-items: center;
     
-    padding-top: 15px;
+    
     margin-bottom: -3px;
     margin-left: -3px;
 
@@ -29,13 +30,16 @@
 }
   
 .gallery__card img { 
-
+  display: block;
+  position: absolute;
+  z-index: 3;
    @media screen and (max-width: 479px) {
         border-radius: 5px;
     }
   
     @media screen and (min-width: 480px) {
         border-radius: 10px;
+        
     }
   
     @media screen and (min-width: 768px) {
@@ -45,16 +49,48 @@
     @media screen and (min-width: 1280px) {
        border-radius: 20px;
     }
+  &:hover{
+    transition: all 0.8s ease 0s;
+    transform-style: preserve-3d;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+  }  
 }
- 
+.gallery__card-logo {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 5px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accent-color;
+  text-align: center;
+
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  @media screen and (min-width: 480px) {
+    font-size: 9px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 22px;
+  }
+}
   
 .gallery__card {
+    position: relative;
+
     display: block;
     background-color: #FFB8CA;
     
     border-radius: 5px;
-    width: 39px;
-    height: 39px;
+    width: 36px;
+    height: 36px;
     margin-bottom: 3px;
     margin-left: 3px;
     transform: scale(1, 1);
@@ -124,6 +160,19 @@
     width: 285px;
     height: 285px;
     }
+}
+
+.gallery__card_x2 p {
+  font-size: 10px;
+  @media screen and (min-width: 480px) {
+    font-size: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
+  }
 }
   
   

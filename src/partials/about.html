@@ -1,27 +1,54 @@
-<section class="about">
-    <div class="about-container">
+<section id="how-its-made" class="about about-section">
+    <div class="container">
         <div class="about-list">
-            <label class="title"> tradition and love</label>
-            <h1 class="headline"> how it’s made?</h>
-            <a class="milk-cow" href=""><img class="milk-cow-img" src="./images/about/about-1m.png" alt="milk and cow" width="280" height="279"></a>
+            <label class="about-list__title" for="tradition and love"> tradition and love</label>
+            <h2 class="about-list__headline"> how it’s made?</h2>
         </div>
-        <div class="about-subcontainer">
-            <ul class="cow-text-list">
-                <li class="cow-text">
-                    Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
-                    faucibus lorem
-                    eget, egestas eros.
-                    Maecenas eleifend erat at justo fringilla.
-                </li>
-                <li class="cow-text">
-                    Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
-                    imperdiet placerat.
-                    Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
-                </li>
-                <li class="cow-text">Aliquam erat volutpat. Aenean accumsan.</li>
-            </ul>
-            <button class="about-readmore-button" type="button" data-modal-open>Read more</button>
+        <div class="about-container">
+            <picture class="milk-cow-img cow-container">
+                <source srcset="./images/about/about-1d-min.png 1x, ./images/about/about-1d@2-min.png 2x"
+                    media="(min-width:1200px)" type="image/png" />
+                <source srcset="./images/about/about-1t.png 1x, ./images/about/about-1t@2.png 2x" media="(min-width:768px)"
+                    type="image/png" />
+                <source srcset="./images/about/about-1m.png 1x, ./images/about/about-1m@2.png 2x" media="(min-width:480px)"
+                    type="image/png" />
+                <img class="milk-cow-img cow" src="./images/about/about-1d-min.png" alt="milk and cow" width="280" height="279">
+            </picture>
+            <div class="about-subcontainer">
+                <ul class="cow-text-list">
+                    <li class="cow-text">
+                        Every one of our ice creams is sourced from the finest ingredients we can find.
+        
+                    </li>
+                    <li class="cow-text">
+                        Twenty five years ago, we set out to create top-notch ice cream, using the organic milk made on our farm
+                        in a little village hidden away amongst the gentle hills of North East Wales.
+                    </li>
+                    <li class="cow-text">We soon converted a little barn and from it, eagerly worked towards our goal; to make a
+                        family of ice creams that would be second to none in their taste and creamy texture.</li>
+                </ul>
+                <button class="about-readmore-button" type="button" about-modal-open>Read more
+                    <svg class="about-readmore-img" width="8" height="8">
+                        <use href="./images/sprite.svg#icon-Vector-btn"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="backdrop is-hidden" about-modal>
+            <div class="modal-about">
+                <button type="button" class="close-btn" about-modal-close>
+                    <svg class="close-btn-icon">
+                        <use href="./images/sprite.svg#icon-mob-close"></use>
+                    </svg>
+                </button>
+                <p class="modal-text">
+                    Most ice cream is made with lots of heavy cream and eggs. It tastes delicious but it’s not very health-conscious. Using
+                    milk can be a tasty and healthier alternative to traditional cream. For something a little richer, try an ice cream made
+                    with sweetened condensed milk.
+                </p>
+                
+                <span class="test1">ice cream (U+1F368)</span>
+            </div>
         </div>
     </div>
-    <img class="milk-overlay" src="./images/about/about-2m.png" alt="milk">
 </section>
