@@ -23,6 +23,7 @@
 .navigation {
   position: absolute;
   left: 50%;
+  top: 96%;
   transform: translateX(-50%);
   display: flex;
   @media screen and(min-width: $tablet) {
