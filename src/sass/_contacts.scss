@@ -1,14 +1,29 @@
+.contacts-section {
+  background-color: ($bgc-section);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 54px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 81px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 86px;
+  }
+}
+
 .contacts {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -20px;
+  justify-content: center;
   margin-bottom: -20px;
 }
 
 .contacts-item {
-  margin-left: 20px;
   margin-bottom: 20px;
-  background: #ffffff;
+  background-color: ($hero-text);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
@@ -17,7 +32,7 @@
     flex-basis: calc(100% / 3 - 20px);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-left: 30px;
     flex-basis: calc(100% / 3 - 30px);
   }
@@ -26,6 +41,7 @@
 .contacts-item__block {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 44px 20px;
   font-weight: 500;
   font-size: 12px;
@@ -38,7 +54,7 @@
     line-height: calc(26 / 14);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding: 54px 44px;
     font-size: 16px;
     line-height: calc(30 / 16);
@@ -47,7 +63,9 @@
 
 .contacts-item__type {
   margin-bottom: 25px;
-  color: #ffffff;
+  width: 45%;
+  text-align: center;
+  color: ($hero-text);
   background: #f0d1a5;
   background-size: cover;
   background-position: center;
@@ -56,17 +74,19 @@
 }
 
 .contacts-item__type--green {
+  width: 70%;
+  text-align: center;
   background: #c2e297;
 }
 
 .contacts-item__title {
   margin-bottom: 10px;
-  color: var($primary-text-color);
+  color: ($primary-text-color);
 }
 
 .contacts-item__description {
   margin-bottom: 25px;
-  color: var($secondary-text-color);
+  color: ($secondary-text-color);
 }
 
 .schedule {
@@ -82,13 +102,18 @@
 }
 
 .schedule__days {
-  color: var($primary-text-color);
+  color: ($primary-text-color);
 }
 
 .schedule__wh {
-  color: var($rosy-text-color);
+  color: ($rosy-text-color);
 }
 
 .contact-us__link {
-  color: var($secondary-text-color);
+  color: ($secondary-text-color);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: ($accent-color);
+  }
 }
