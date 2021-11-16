@@ -1,8 +1,13 @@
 .section-mobile{
     
     background: #FFF5F6;
-    padding-top: 54px;
     padding-bottom: 113px;
+  @media screen and(min-width: $tablet) {
+  padding-bottom: 158px;
+  }
+   @media screen and(min-width: $tablet) {
+  padding-bottom: 165px;
+  }
        
     }
     .windows-mobile{
