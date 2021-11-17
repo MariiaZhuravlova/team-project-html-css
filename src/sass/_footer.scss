@@ -62,21 +62,67 @@
   }
 }
 .socials__link {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 32px;
   height: 32px;
   border-radius: 50%;
+  overflow: hidden;
 
   background-color: #fea5bb;
+
+  &:hover::after,
+  &:focus::after {
+    animation: flow-in 700ms ease-in 1 both;
+  }
+
   @media screen and (min-width: 768px) {
     width: 34px;
     height: 34px;
   }
-  &:hover {
-    background-color: $accent-color;
+  &:after {
+    content: '';
+    position: absolute;
+    // outline: 1px solid black;
+    top: 0;
+    width: 120%;
+    height: 130%;
+
+    background: $accent-color;
+    background: url(../images/icons/wave.svg);
+    background-size: 100px 80px;
+    background-repeat: repeat-x;
+    border-radius: 30%;
+
+    transform: translateY(-102%);
+    animation: flow-out 700ms ease-in 1;
+
+    @keyframes flow-in {
+      from {
+        transform: translateY(-100%);
+        background-position-x: 10px;
+      }
+      to {
+        transform: translateY(0);
+        background-position-x: 100px;
+      }
+    }
+    @keyframes flow-out {
+      from {
+        transform: translateY(0);
+        background-position-x: 100px;
+      }
+      to {
+        transform: translateY(-100%);
+        background-position-x: 10px;
+      }
+    }
   }
+}
+.socials__icon {
+  z-index: 1;
 }
 .footer__contact-text {
   font-style: normal;
