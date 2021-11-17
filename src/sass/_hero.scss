@@ -153,17 +153,28 @@
   margin-left: 16px;
   @media screen and (min-width: $mobile) {
     margin-top: 70px;
-    margin-left: 120px;
+    // margin-left: 120px;
     width: 324px;
     height: 324px;
+    animation-name: pink-circle-f1;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @media screen and (max-width: $mobile) {
+    animation-name: pink-circle-f2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
   }
   @media screen and (min-width: $tablet) {
     margin-top: 31px;
-    margin-left: 271px;
+    margin-left: 183px;
     width: 324px;
     height: 324px;
   }
-
   @media screen and (min-width: $desktop) {
     margin-top: 52px;
     margin-left: 360px;
@@ -179,15 +190,59 @@
   margin-left: 16px;
   @media screen and (min-width: $mobile) {
     margin-top: 31px;
-    margin-left: 115px;
+    // margin-left: 115px;
+    animation-name: ice-cream-f1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @media screen and (max-width: $mobile) {
+    animation-name: ice-cream-f2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
   }
   @media screen and (min-width: $tablet) {
     margin-top: 63px;
-    margin-left: 267px;
+    margin-left: 181px;
   }
   @media screen and (min-width: $desktop) {
     margin-top: 108px;
-    margin-left: 402px;
+    margin-left: 404px;
+  }
+}
+@keyframes pink-circle-f1 {
+  0% {
+    left: 16px;
+  }
+  100% {
+    left: 120px;
+  }
+}
+@keyframes pink-circle-f2 {
+  0% {
+    left: 120px;
+  }
+  100% {
+    left: 16px;
+  }
+}
+@keyframes ice-cream-f1 {
+  0% {
+    left: 16px;
+  }
+  100% {
+    left: 115px;
+  }
+}
+@keyframes ice-cream-f2 {
+  0% {
+    left: 115px;
+  }
+  100% {
+    left: 16px;
   }
 }
 
@@ -217,6 +272,11 @@
   @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.42;
+  }
+  &:hover,
+  &:focus {
+    animation: wobble;
+    animation-duration: 2s;
   }
 }
 .hero-button {
@@ -257,6 +317,11 @@
     bottom: 45px;
     margin-left: -38px;
   }
+  &:hover,
+  &:focus {
+    animation: wobble;
+    animation-duration: 2s;
+  }
 }
 .hero-lady {
   @media screen and (max-width: $tablet) {
@@ -268,6 +333,11 @@
   @media screen and (min-width: $desktop) {
     margin-right: 72px;
   }
+  &:hover,
+  &:focus {
+    animation: wobble;
+    animation-duration: 2s;
+  }
 }
 .hero-numbers {
   @media screen and (max-width: $tablet) {
@@ -278,6 +348,11 @@
   right: 34px;
   @media screen and (min-width: $desktop) {
     right: 97px;
+  }
+  &:hover,
+  &:focus {
+    animation: wobble;
+    animation-duration: 2s;
   }
 }
 
