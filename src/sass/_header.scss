@@ -30,7 +30,6 @@
 .header-logo {
   width: 199px;
   height: 50px;
- 
 }
 
 .button-mob-icon {
@@ -96,7 +95,6 @@
   border: none;
   cursor: pointer;
 
-  
   // &:active{
   //   & .mob-menu{
   //   width: 250px;
@@ -143,16 +141,23 @@
   position: absolute;
   top: 23px;
   right: 28px;
-  fill: #ffffff;
-  
+  background-color: $bgc-mob-menu;
   border: none;
   cursor: pointer;
-  z-index: 7;
-
- 
+  // z-index: 7;
+}
+.icon-cross {
+  width: 27px;
+  height: 27px;
+  fill: $hero-text;
+  transition: fill $timing-duration $timing-function;
+  .button-menu-close:hover &,
+  .button-menu-close:focus & {
+    fill: $accent-color;
+  }
 }
 .mob-menu.is-open {
-transform: translateX(0);
+  transform: translateX(0);
 }
 
 .mob-menu-nav__link {
@@ -210,12 +215,6 @@ transform: translateX(0);
   color: $accent-color;
 }
 
-.icon-cross{
-  fill: #ffffff;
- 
-}
-.icon-menu{
+.icon-menu {
   fill: $accent-color;
-  
 }
-
