@@ -77,7 +77,7 @@
   @media screen and (min-width: 768px) {
     font-size: 12px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 22px;
   }
 }
@@ -89,10 +89,13 @@
     background-color: #FFB8CA;
     
     border-radius: 5px;
-    width: 36px;
-    height: 36px;
+    width: 31px;
+    height: 31px;
     margin-bottom: 3px;
-    margin-left: 3px;
+    &:not(:last-child){
+      margin-left: 3px;
+    }
+    
     transform: scale(1, 1);
   
     @media screen and (min-width: 480px) {
@@ -113,7 +116,7 @@
     margin-left: 5px;
     }
   
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
     
     border-radius: 20px;
     width: 136px;
@@ -140,8 +143,8 @@
   
 .gallery__card_x2 { 
 
-    width: 83px;
-    height: 83px;
+    width: 80px;
+    height: 80px;
   
   @media screen and (min-width: 480px) {
   
@@ -170,7 +173,7 @@
   @media screen and (min-width: 768px) {
     font-size: 22px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 40px;
   }
 }
