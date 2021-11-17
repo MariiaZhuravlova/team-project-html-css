@@ -122,26 +122,26 @@
     line-height: (14 / 18 * 100%);
   }
 }
-.hero-image {
-  z-index: 1;
-}
-.hero-img {
-  display: block;
-  max-width: 171px;
-  height: 100%;
-  // margin-top: 9px;
-  margin-left: 77px;
-  fill: transparent;
-  z-index: 1;
-  @media screen and (min-width: $tablet) {
-    max-width: 143px;
-    height: 100%;
-  }
-  @media screen and (min-width: $desktop) {
-    max-width: 236px;
-    height: 100%;
-  }
-}
+// .hero-image {
+//   z-index: 1;
+// }
+// .hero-img {
+//   display: block;
+//   max-width: 171px;
+//   height: 100%;
+//   // margin-top: 9px;
+//   margin-left: 77px;
+//   fill: transparent;
+//   z-index: 1;
+//   @media screen and (min-width: $tablet) {
+//     max-width: 143px;
+//     height: 100%;
+//   }
+//   @media screen and (min-width: $desktop) {
+//     max-width: 236px;
+//     height: 100%;
+//   }
+// }
 .hero-circle {
   position: absolute;
   display: block;
@@ -182,36 +182,222 @@
     height: 538px;
   }
 }
+// .hero-img-composition {
+//   position: absolute;
+//   bottom: 0;
+//   display: flex;
+//   padding: 0;
+//   margin-left: 16px;
+//   @media screen and (min-width: $mobile) {
+//     margin-top: 31px;
+//     // margin-left: 115px;
+//     animation-name: ice-cream-f1;
+//     animation-duration: 2s;
+//     animation-timing-function: linear;
+//     animation-iteration-count: 1;
+//     animation-fill-mode: forwards;
+//   }
+//   @media screen and (max-width: $mobile) {
+//     animation-name: ice-cream-f2;
+//     animation-duration: 2s;
+//     animation-timing-function: linear;
+//     animation-iteration-count: 1;
+//     animation-fill-mode: backwards;
+//   }
+//   @media screen and (min-width: $tablet) {
+//     margin-top: 63px;
+//     margin-left: 181px;
+//   }
+//   @media screen and (min-width: $desktop) {
+//     margin-top: 108px;
+//     margin-left: 404px;
+//   }
+// }
 .hero-img-composition {
+  // outline: 2px solid black;
   position: absolute;
-  bottom: 0;
   display: flex;
+  flex-direction: column;
+  // border-radius: 50%;
+  bottom: -12px;
+  left: 594px;
+
+  // animation: glow 5s linear infinite;
+  // @keyframes glow {
+  //   20%,
+  //   100% {
+  //     background-color: burlywood;
+  //   }
+  // }
+
+  // @media screen and (min-width: $mobile) {
+  //   margin-top: 31px;
+  //   margin-left: 115px;
+  // }
+  // @media screen and (min-width: $tablet) {
+  //   margin-top: 63px;
+  //   margin-left: 267px;
+  // }
+  // @media screen and (min-width: $desktop) {
+  //   margin-top: 108px;
+  //   margin-left: 402px;
+  // }
+}
+.hero-img-composition__circle {
+  // outline: 1px solid black;
+  position: absolute;
+  margin: auto;
   padding: 0;
-  margin-left: 16px;
-  @media screen and (min-width: $mobile) {
-    margin-top: 31px;
-    // margin-left: 115px;
-    animation-name: ice-cream-f1;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+  top: 50px;
+  left: -5px;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  // overflow: hidden;
+  width: 120px;
+  height: 120px;
+  z-index: 99;
+  background-color: rgba(199, 19, 62, 0.2);
+  transition: background-color 500ms cubic-bezier(0.45, 0, 0.55, 1);
+
+  &:hover {
+    background-color: rgba(199, 19, 62, 0.6);
   }
-  @media screen and (max-width: $mobile) {
-    animation-name: ice-cream-f2;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: backwards;
+  &::before,
+  &::after {
+    content: '';
+    // outline: 1px solid black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #c7133e;
+    border-radius: 50%;
+    z-index: -1;
+    pointer-events: none;
+
+    opacity: 0.4;
   }
-  @media screen and (min-width: $tablet) {
-    margin-top: 63px;
-    margin-left: 181px;
+  &::before {
+    animation: pulse 10s ease-out infinite;
   }
-  @media screen and (min-width: $desktop) {
-    margin-top: 108px;
-    margin-left: 404px;
+  &::after {
+    animation: pulse 10s ease-out infinite;
   }
+  @keyframes pulse {
+    20%,
+    100% {
+      transform: scale(1.4);
+      opacity: 0;
+    }
+  }
+}
+.partone {
+  position: absolute;
+  top: -362px;
+  left: -14px;
+  overflow: hidden;
+
+  transition: transform 2s cubic-bezier(0.61, 1, 0.88, 1);
+  .hero-img-composition .hero-img-composition__circle:hover ~ & {
+    transform: translateY(-1000px);
+  }
+  animation: fall-one 2.3s cubic-bezier(0.61, 1, 0.88, 1) 0.5s 1 forwards;
+  @keyframes fall-one {
+    0% {
+      top: -1000px;
+    }
+    100% {
+      top: -362px;
+    }
+  }
+}
+.parttwo {
+  position: absolute;
+  top: -281px;
+  left: -20px;
+
+  transition: transform 2s cubic-bezier(0.61, 1, 0.88, 1);
+  .hero-img-composition .hero-img-composition__circle:hover ~ & {
+    transform: translateY(-900px);
+  }
+  animation: fall-two 2.1s cubic-bezier(0.61, 1, 0.88, 1) 0.5s 1 forwards;
+  @keyframes fall-two {
+    0% {
+      top: -900px;
+    }
+    100% {
+      top: -281px;
+    }
+  }
+}
+.partthree {
+  position: absolute;
+  top: -204px;
+  left: -17px;
+  pointer-events: none;
+
+  transition: transform 2s cubic-bezier(0.61, 1, 0.88, 1);
+  .hero-img-composition .hero-img-composition__circle:hover ~ & {
+    transform: translateY(-800px);
+  }
+  animation: fall-three 1.7s cubic-bezier(0.61, 1, 0.88, 1) 0.5s 1 forwards;
+  @keyframes fall-three {
+    0% {
+      top: -800px;
+    }
+    100% {
+      top: -204px;
+    }
+  }
+}
+.partfour {
+  position: absolute;
+  top: -147px;
+  left: -14px;
+  pointer-events: none;
+
+  transition: transform 2s cubic-bezier(0.61, 1, 0.88, 1);
+  .hero-img-composition .hero-img-composition__circle:hover ~ & {
+    transform: translateY(-700px);
+  }
+  animation: fall-four 1.3s cubic-bezier(0.61, 1, 0.88, 1) 0.5s 1 forwards;
+  @keyframes fall-four {
+    0% {
+      top: -700px;
+    }
+    100% {
+      top: -147px;
+    }
+  }
+}
+.partfive {
+  @extend .partfour;
+  top: -99px;
+  left: -20px;
+  pointer-events: none;
+
+  transition: transform 2s cubic-bezier(0.61, 1, 0.88, 1);
+  .hero-img-composition .hero-img-composition__circle:hover ~ & {
+    transform: translateY(-600px);
+  }
+  animation: fall-five 1s cubic-bezier(0.61, 1, 0.88, 1) 0.5s 1 forwards;
+  @keyframes fall-five {
+    0% {
+      top: -600px;
+    }
+    100% {
+      top: -99px;
+    }
+  }
+}
+.partsix {
+  // outline: 1px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 10;
+  // pointer-events: none;
+
+  transition: opacity 500ms ease-in-out;
 }
 @keyframes pink-circle-f1 {
   0% {
@@ -229,22 +415,22 @@
     left: 16px;
   }
 }
-@keyframes ice-cream-f1 {
-  0% {
-    left: 16px;
-  }
-  100% {
-    left: 115px;
-  }
-}
-@keyframes ice-cream-f2 {
-  0% {
-    left: 115px;
-  }
-  100% {
-    left: 16px;
-  }
-}
+// @keyframes ice-cream-f1 {
+//   0% {
+//     left: 16px;
+//   }
+//   100% {
+//     left: 115px;
+//   }
+// }
+// @keyframes ice-cream-f2 {
+//   0% {
+//     left: 115px;
+//   }
+//   100% {
+//     left: 16px;
+//   }
+// }
 
 .hero-milk-text {
   @media screen and (max-width: $tablet) {
