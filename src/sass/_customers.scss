@@ -49,17 +49,17 @@
 .navigation {
   position: absolute;
   left: 50%;
-  top: 80%;
+  top: 90%;
   transform: translateX(-50%);
   display: flex;
   @media screen and (min-width: $tablet) {
     left: 49%;
-    top: 80%;
+    top: 70%;
   }
 
   @media screen and (min-width: $desktop) {
     left: 49%;
-    top: 75%;
+    top: 63%;
   }
 }
 // .point {
@@ -240,7 +240,7 @@ input[name='r'] {
     }
     @media screen and (min-width: $desktop) {
       left: auto;
-      top: 180%;
+      top: 220%;
     }
   }
 
