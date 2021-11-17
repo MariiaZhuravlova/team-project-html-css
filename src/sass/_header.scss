@@ -1,6 +1,6 @@
 .header {
-  background-color: rgba(255, 184, 202, .5);
-  
+  background-color: rgba(255, 184, 202, 0.5);
+
   padding-top: 6px;
   position: fixed;
   top: 0;
@@ -15,31 +15,29 @@
   }
 }
 .container-header {
-  
   // @media screen and(min-width: $desktop) {
   //   display: flex;
   // flex-direction: row;
   // align-items: center;
   // }
 }
-.container-navigation{
-display: flex;
-flex-direction: row;
-align-items: center;
+.container-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.sub-navigation{
+.sub-navigation {
   display: flex;
   margin-left: auto;
-
 }
 .header-logo {
   width: 199px;
   height: 50px;
   &:hover,
-  &:focus{
+  &:focus {
     animation: shakeX; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 3s;
+    animation-duration: 3s;
   }
 }
 
@@ -56,19 +54,17 @@ align-items: center;
   color: $accent-color;
   cursor: pointer;
   text-align: center;
-  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
- 
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
-
     background-color: #ecebeb;
     color: $accent-color;
   }
-  @media screen and(min-width: $tablet){
-    
+  @media screen and(min-width: $tablet) {
   }
-  @media screen and(min-width: $desktop){
-    
+  @media screen and(min-width: $desktop) {
   }
 }
 
@@ -87,7 +83,6 @@ align-items: center;
 }
 
 .mob-menu {
-  
   position: fixed;
   top: 0;
   right: 0;
@@ -96,7 +91,7 @@ align-items: center;
   padding-top: 60px;
   background-color: $bgc-mob-menu;
   z-index: 999;
-  
+
   transform: translateX(100%);
   transition: transform 500ms ease-in-out;
   @media screen and(min-width: $desktop) {
@@ -109,19 +104,16 @@ align-items: center;
   border: none;
   cursor: pointer;
 
-  
   &:hover,
-  &:focus{
-    animation: wobble; 
-  animation-duration: 3s;
-  
+  &:focus {
+    animation: wobble;
+    animation-duration: 3s;
   }
-  // &:active{ 
+  // &:active{
   //   & .mob-menu{
   //   width: 250px;
   //  }}
   @media screen and (min-width: $tablet) {
-   
   }
   @media screen and (min-width: $desktop) {
     display: none;
@@ -155,8 +147,8 @@ align-items: center;
   color: #ffffff;
   transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
-  &:focus{
-    color: $accent-color; 
+  &:focus {
+    color: $accent-color;
   }
 }
 .button-menu-close {
@@ -166,11 +158,11 @@ align-items: center;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  
+
   &:hover,
-  &:focus{
-    animation: wobble; 
-  animation-duration: 3s;
+  &:focus {
+    animation: wobble;
+    animation-duration: 3s;
   }
 }
 .mob-menu.is-open {
@@ -226,16 +218,16 @@ align-items: center;
     align-items: center;
     justify-content: center;
     margin-left: 30px;
-}
+  }
 }
 .current-page {
   color: $accent-color;
 }
-.icon-cross{
-fill:#ffffff;
-   transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1)
-   .button-menu-close:hover &,
-   .button-menu-close:focus &{
+.icon-cross {
+  fill: #ffffff;
+  transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  .button-menu-close:hover &,
+  .button-menu-close:focus & {
     fill: $accent-color;
-          }
+  }
 }
