@@ -35,8 +35,9 @@
         <use class="icon-menu" href="./images/sprite.svg#icon-burger"></use>
       </svg>
     </button>
- 
-    <button type="button" class="header-button">
+
+    <button type="button" class="header-button" buy-modal-open>
+
       Buy now
       <svg class="mob-icon">
         <use href="./images/header/sprite-header.svg#icon-vector"></use>
@@ -55,7 +56,6 @@
           </svg>
         </button>
       </div>
-
       <ul class="mob-menu-nav__list list">
         <li class="mob-menu-nav__item">
           <a class="mob-menu-nav__link link current-page" href="./index.html">Home</a>
@@ -81,3 +81,46 @@
     </button>
   </div>
 </header>
+<div class="overlay buy-is-hidden" buy-modal>
+  <div class="modal-buy">
+    <button type="button" class="close-modal-buy" buy-modal-close>
+      <svg class="close-but-modal-buy">
+          <use href="./images/modal-buy.svg#icon-buton-for-close"></use>
+      </svg>
+      </button>
+      <p class="buy-modal-title">Checkout</p>
+      <form action="#" class="buy-modal-form">
+        <div class="buy-modal-field">
+          <label for="user-name" class="buy-input-lable">Name</label>
+          <input type="text" name="user-name" id="user-name" class="buy-modal-input">
+        </div>
+        <div class="buy-modal-field">
+          <label for="user-tel" class="buy-input-lable">Telephone</label>
+          <input type="tel" name="user-tel" id="user-tel" class="buy-modal-input">
+        </div>
+        <div class="buy-modal-field">
+          <label for="user-email" class="buy-input-lable">Email</label>
+          <input type="email" name="user-email" id="user-email" class="buy-modal-input">
+        </div>
+        <span class="buy-input-list">
+        <div class="buy-modal-field">
+          <label for="user-text" class="buy-input-lable">Your comment</label>
+        <textarea name="user-text" id="user-text" class="buy-modal-comit" placeholder="Coments"></textarea>
+        </div>
+        <p class="buy-modal-title">Product selection</p>
+        <div class="buy-modal-field">
+          <label for="user-name" class="buy-input-lable">What products do you want</label>
+          <input type="text" name="user-name" id="user-name" class="buy-modal-input" placeholder="ice-cream, milk-shake, cofe...">
+        </div>
+        <div class="buy-modal-field">
+          <label for="user-text" class="buy-input-lable">City</label>
+          <input type="text" name="user-text" id="user-text" class="buy-modal-input">
+        </div>
+        <div class="buy-modal-field">
+          <label for="user-text" class="buy-input-lable">Address</label>
+          <input type="text" name="user-text" id="user-text" class="buy-modal-input">
+        </div>
+        <button type="submit" class="buy-modal-btn">Click and BUY :)</button>
+      </form>
+  </div>
+</div>
