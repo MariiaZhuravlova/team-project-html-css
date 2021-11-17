@@ -6,6 +6,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  overflow: hidden;
   z-index: 3;
   @media screen and(min-width: $tablet) {
     padding-top: 38px;
@@ -14,13 +15,7 @@
     padding-top: 37px;
   }
 }
-.container-header {
-  // @media screen and(min-width: $desktop) {
-  //   display: flex;
-  // flex-direction: row;
-  // align-items: center;
-  // }
-}
+
 .container-navigation {
   display: flex;
   flex-direction: row;
@@ -30,15 +25,12 @@
 .sub-navigation {
   display: flex;
   margin-left: auto;
+  align-items: baseline;
 }
 .header-logo {
   width: 199px;
   height: 50px;
-  &:hover,
-  &:focus {
-    animation: shakeX; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 3s;
-  }
+ 
 }
 
 .button-mob-icon {
@@ -69,7 +61,7 @@
 }
 
 .mob-icon {
-  width: 5.26px;
+  width: 6px;
   height: 8px;
   margin-left: 15px;
   @media screen and(min-width: $tablet) {
@@ -90,7 +82,7 @@
   height: 100vh;
   padding-top: 60px;
   background-color: $bgc-mob-menu;
-  z-index: 999;
+  z-index: 5;
 
   transform: translateX(100%);
   transition: transform 500ms ease-in-out;
@@ -104,11 +96,7 @@
   border: none;
   cursor: pointer;
 
-  &:hover,
-  &:focus {
-    animation: wobble;
-    animation-duration: 3s;
-  }
+  
   // &:active{
   //   & .mob-menu{
   //   width: 250px;
@@ -155,18 +143,16 @@
   position: absolute;
   top: 23px;
   right: 28px;
-  background-color: transparent;
+  fill: #ffffff;
+  
   border: none;
   cursor: pointer;
+  z-index: 7;
 
-  &:hover,
-  &:focus {
-    animation: wobble;
-    animation-duration: 3s;
-  }
+ 
 }
 .mob-menu.is-open {
-  transform: translateX(0);
+transform: translateX(0);
 }
 
 .mob-menu-nav__link {
