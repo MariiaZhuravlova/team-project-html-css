@@ -86,7 +86,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 250px;
+  width: 100vw;
   height: 100vh;
   padding-top: 60px;
   background-color: $bgc-mob-menu;
@@ -224,5 +224,12 @@
   color: $accent-color;
 }
 
-
+.icon-cross{
+  fill: #ffffff;
+ 
+}
+.icon-menu{
+  fill: $accent-color;
+  
+}
 
