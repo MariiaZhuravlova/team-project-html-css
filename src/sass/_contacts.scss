@@ -1,25 +1,19 @@
 .contacts-section {
-  background-image: linear-gradient(
-        to top,
-        #fff5f6 80%,
-        #fff  20%);
-  padding-bottom: 54px;
+  background-image: linear-gradient(to top, #fff5f6 80%, #fff 20%);
+  padding-bottom: 113px;
 
   @media screen and (min-width: $tablet) {
-    padding-bottom: 81px;
+    padding-bottom: 158px;
   }
 
   @media screen and (min-width: $desktop) {
-    padding-bottom: 86px;
+    padding-bottom: 165px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(../images/contacts/bg-contacts-section.png), linear-gradient(
-      to top,
-      #fff5f6 80%,
-      #fff  20%);;
+    background-image: url(../images/contacts/bg-contacts-section.png),
+      linear-gradient(to top, #fff5f6 80%, #fff 20%);
   }
 }
-
 
 .contacts {
   display: flex;

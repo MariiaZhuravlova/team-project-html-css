@@ -1,23 +1,12 @@
-.section-mobile {
-  background: $bgc-section;
-  padding-bottom: 113px;
-
-  @media screen and(min-width: $tablet) {
-    padding-bottom: 158px;
-  }
-
-  @media screen and(min-width: $tablet) {
-    padding-bottom: 165px;
-  }
-}
-
 .windows-mobile {
+  padding-top: 54px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   @media screen and(min-width: $tablet) {
+    padding-top: 81px;
     flex-direction: row;
   }
 }
