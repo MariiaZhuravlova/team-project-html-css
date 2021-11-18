@@ -1,7 +1,18 @@
 .header {
-}
-.container-header {
   background-color: rgba(255, 184, 202, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  padding-top: 6px;
+  @media screen and(min-width: $tablet) {
+    padding-top: 37px;
+  }
+  
+}
+.container .container-header {
+ 
   width: 100%;
   padding-top: 6px;
   position: fixed;
@@ -9,15 +20,7 @@
   left: 0;
 
   overflow: hidden;
-  z-index: 3;
-
-  @media screen and(min-width: $tablet) {
-    padding-top: 38px;
   }
-  @media screen and(min-width: $desktop) {
-    padding-top: 37px;
-  }
-}
 .container-navigation {
   display: flex;
   flex-direction: row;
@@ -55,10 +58,7 @@
     background-color: #ecebeb;
     color: $accent-color;
   }
-  @media screen and(min-width: $tablet) {
-  }
-  @media screen and(min-width: $desktop) {
-  }
+  
 }
 
 .mob-icon {
@@ -87,8 +87,9 @@
 
   transform: translateX(100%);
   transition: transform 500ms ease-in-out;
-  @media screen and(min-width: $desktop) {
-    width: 280px;
+
+  @media screen and(min-width: $tablet) {
+    width: 40vw;
   }
 }
 .button-menu {
