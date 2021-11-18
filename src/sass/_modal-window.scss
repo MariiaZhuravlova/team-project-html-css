@@ -62,6 +62,7 @@
 }
 .modal-maps,
 .backdrop {
+  overflow: auto;
   position: fixed;
   top: 0;
   left: 0;
@@ -100,7 +101,81 @@
   height: 100%;
   background-color: $bgc-section;
 }
+.modal-map-text{
+  font-size: 20px;
+  line-height: 2;
+  font-weight: 900;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #f36f90;
+}
+.modal-map-text2{
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #db2955;
+}
 
+.checkbox-logo{
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #740924;
+}
+.modal-map{
+  padding: 50px 20px 50px 20px;
+}
+.checkbox-blok{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  
+ 
+  // @media screen and (max-width:1200px){
+    display: flex;
+    flex-wrap: wrap;
+
+    // @media (min-width: 768px) and (max-width: 1200px){
+    //   display: flex;
+    //   flex-wrap: wrap;
+    // }
+  
+    // @media screen and (min-width: $desktop){
+    //   display: flex;
+    // }
+  
+}
+.checkbox-map1{
+  display: grid;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  // @media screen and (min-width: $tablet){
+  //  display: flex;
+  
+  //   @media screen and (min-width: $desktop){
+  //     flex-basis: calc(100% / 3 - 30px);
+  //   }
+  // }
+}
+
+.checkbox-map-text{
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 300;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #be3a5b;
+}
+.checkbox-logo{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .modal {
 
   position: absolute;
