@@ -1,3 +1,4 @@
+
 .overlay {
   position: fixed;
   width: 100vw;
@@ -15,6 +16,7 @@
     visibility: hidden;
     pointer-events: none;
   }
+
 }
 
 .buy-is-hidden .modal-buy {
@@ -161,4 +163,5 @@
   top: 210%;
 
   transform: translateY(-210%);
+
 }

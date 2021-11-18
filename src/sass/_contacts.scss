@@ -1,5 +1,8 @@
 .contacts-section {
-  background-color: ($bgc-section);
+  background-image: linear-gradient(
+        to top,
+        #fff5f6 80%,
+        #fff  20%);
   padding-bottom: 54px;
 
   @media screen and (min-width: $tablet) {
@@ -10,9 +13,13 @@
     padding-bottom: 86px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(../images/contacts/bg-contacts-section.png);
+    background-image: url(../images/contacts/bg-contacts-section.png), linear-gradient(
+      to top,
+      #fff5f6 80%,
+      #fff  20%);;
   }
 }
+
 
 .contacts {
   display: flex;
