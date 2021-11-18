@@ -96,7 +96,6 @@
   &:after {
     content: '';
     position: absolute;
-    // outline: 1px solid black;
     top: 0;
     width: 130%;
     height: 140%;
@@ -104,21 +103,17 @@
     background: $accent-color;
     background: url(../images/icons/wave.svg);
     background-size: 150px 80px;
-    // background-repeat: repeat-x;
     border-radius: 30%;
 
     transform: translateY(-102%);
     transition: transform 0.9s ease-in-out;
     animation: flow-out 900ms ease-in 2 both;
-
     @keyframes flow-in {
       0% {
-        background-position-y: 0px;
         background-position-x: 0px;
       }
       100% {
         background-position-x: 90px;
-        background-position-y: 0px;
       }
     }
     @keyframes flow-out {
