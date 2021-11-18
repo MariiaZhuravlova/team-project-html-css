@@ -1,106 +1,125 @@
+.modal-maps{
+overflow: auto;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 9;
+min-width: 320px;
+height: 100%;
+background: rgba(0, 0, 0, 0.2);
+// transition-property: background, border;
+// transition-duration: 250ms;
+// transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition: opacity 700ms ease-in-out, visibility 700ms ease-in-out;
 
-.modal-maps__map {
-  padding-top: 40px;
-  margin: 15px;
-  width: 100%;
-  height: 100%;
-  background-color: $bgc-section;
-  // background-image: url(../images/modal/bg-modal.png);
-  // background-repeat: no-repeat;
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
+&.maps-is-hidden {
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
+pointer-events: none;
 }
-.modal-maps__requested {
-  display: flex;
-  justify-content: center;
-  font-size: 14px;
-  @media screen and (min-width: 480px) {
-    font-size: 16px;
-  }
-}
-.modal-maps__text {
-  @media screen and (min-width: 310px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
-
-    display: block;
-    padding: 35px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    max-width: 1100px;
-  }
-}
-
-.modal-maps__text--mobile {
-  display: block;
-}
-.modal-maps__location {
-  width: 100%;
-  @media screen and (max-width: 480px) {
-    top: 40px;
-    height: 310px;
-  }
-  @media screen and (min-width: 480px) {
-    display: flex;
-    justify-content: center;
-    width: 480px;
-    padding: 35px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-  }
-  @media screen and (min-width: 1280px) {
-    display: block;
-  }
-}
-.modal-maps,
-.backdrop {
-  overflow: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9;
-  min-width: 320px;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  transition-property: background, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    pointer-events: none;
-  }
-  // @media screen and (max-width: 768px){
-
-  // }
-  @media screen and (min-width: 768px) {
-    top: 0;
-    // left: 25%;
-    // width: 768px;
-  }
-  @media screen and (min-width: 1280px) {
-    left: 0;
-    // min-width: 1600px;
-    width: 100%;
-  }
+@media screen and (max-width: 768px){
 
 }
+@media screen and (min-width: 768px) {
+top: 0;
+ left: 25%;
+width: 768px;
+}
+@media screen and (min-width: 1280px) {
+ left: 0;
+width: 100%;
+ }
+}
+
+
 .modal-maps {
   display: block;
   top: 50px;
   height: 100%;
   background-color: $bgc-section;
 }
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 15px;
+  z-index: 90;
+  background-repeat: no-repeat;
+  background-color: $bgc-section;
+  background-image: url(../images/modal/bg-modal.png);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: transform 450ms ease-in-out;
+
+  @media screen and (max-width: 479px) {
+    width: 80%;
+    height: auto;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 60%;
+    height: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    height: auto;
+    padding: 40px;
+  }
+
+}
+
+
+.maps-button-close,
+.franciza-button-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 8px;
+  margin-top: 8px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  fill: var(--secondary-title-color);
+  background: $hero-text;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition-property: color, border;
+  transition-duration: 2000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+
+  }
+  &:hover .maps-modal-icon,
+  &:hover .franciza-modal-icon {
+    fill: $rosy-text-color;
+  }
+}
+.maps-modal-icon,
+.franciza-modal-icon {
+  fill: $accent-color;
+
+}
+
+.maps-modal-picture,
+.franciza-modal-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+}
+
 .modal-map-text{
   font-size: 20px;
   line-height: 2;
@@ -133,34 +152,14 @@
   display: block;
   justify-content: center;
   align-items: center;
-  
- 
-  // @media screen and (max-width:1200px){
-    display: flex;
-    flex-wrap: wrap;
-
-    // @media (min-width: 768px) and (max-width: 1200px){
-    //   display: flex;
-    //   flex-wrap: wrap;
-    // }
-  
-    // @media screen and (min-width: $desktop){
-    //   display: flex;
-    // }
-  
+  display: flex;
+  flex-wrap: wrap; 
 }
+
 .checkbox-map1{
   display: grid;
   margin-right: 20px;
   margin-bottom: 20px;
-
-  // @media screen and (min-width: $tablet){
-  //  display: flex;
-  
-  //   @media screen and (min-width: $desktop){
-  //     flex-basis: calc(100% / 3 - 30px);
-  //   }
-  // }
 }
 
 .checkbox-map-text{
@@ -176,77 +175,41 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.modal {
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 30px 15px;
-  z-index: 90;
-  background-repeat: no-repeat;
-  background-color: $bgc-section;
-  background-image: url(../images/modal/bg-modal.png);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-
-  @media screen and (max-width: 479px) {
-    width: 80%;
-    height: auto;
-  }
-
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 60%;
-    height: auto;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 450px;
-    height: auto;
-    padding: 40px;
-  }
+.modal-franciza{
+overflow: auto;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 9;
+min-width: 320px;
+height: 100%;
+background: rgba(0, 0, 0, 0.2);
+transition-property: background, border;
+transition: opacity 500ms ease-in-out, visibility 500ms ease-in-out;
+&.franciza-is-hidden {
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
+pointer-events: none;
+}
+@media screen and (max-width: 768px){
 
 }
-.modal__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: 8px;
-  margin-top: 8px;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  fill: var(--secondary-title-color);
-  background: $hero-text;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  transition-property: color, border;
-  transition-duration: 2000ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (min-width: 1280px) {
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    cursor: pointer;
+@media screen and (min-width: 768px) {
+top: 0;
+ left: 25%;
+width: 768px;
+}
+@media screen and (min-width: 1280px) {
+ left: 0;
+width: 100%;
+ }
+}
 
-  }
-  &:hover .modal__icon {
-    fill: $rosy-text-color;
-  }
-}
-.modal__icon {
-  fill: $accent-color;
 
-}
-.modal__picture {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 18px;
-  height: 18px;
-}
+
 .modal__title--title {
   text-align: center;
   margin-bottom: 10px;
