@@ -2,7 +2,7 @@
   background-color: $bgc-section;
 }
 .footer__top {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
   }
@@ -13,10 +13,10 @@
 }
 .footer__heading-wrapper {
   margin-bottom: 45px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 90px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
   }
 }
 .footer__heading-one {
@@ -33,7 +33,7 @@
       display: block;
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-top: 7px;
     font-size: 26px;
   }
@@ -46,9 +46,21 @@
   line-height: 1.15;
   color: $accent-color;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 48px;
     letter-spacing: 0.06em;
+  }
+}
+.contacts {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 45px;
+  }
+  @media screen and (min-width: $tablet) {
+    justify-content: flex-start;
   }
 }
 .socials {
@@ -70,15 +82,14 @@
   height: 32px;
   border-radius: 50%;
   overflow: hidden;
-
   background-color: #fea5bb;
 
   &:hover::after,
   &:focus::after {
-    animation: flow-in 700ms ease-in 1 both;
+    transform: translateY(0);
+    animation: flow-in 900ms ease-out 2 both;
   }
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 34px;
     height: 34px;
   }
@@ -87,36 +98,35 @@
     position: absolute;
     // outline: 1px solid black;
     top: 0;
-    width: 120%;
-    height: 130%;
+    width: 130%;
+    height: 140%;
 
     background: $accent-color;
     background: url(../images/icons/wave.svg);
-    background-size: 100px 80px;
-    background-repeat: repeat-x;
+    background-size: 150px 80px;
+    // background-repeat: repeat-x;
     border-radius: 30%;
 
     transform: translateY(-102%);
-    animation: flow-out 700ms ease-in 1;
+    transition: transform 0.9s ease-in-out;
+    animation: flow-out 900ms ease-in 2 both;
 
     @keyframes flow-in {
-      from {
-        transform: translateY(-100%);
-        background-position-x: 10px;
+      0% {
+        background-position-y: 0px;
+        background-position-x: 0px;
       }
-      to {
-        transform: translateY(0);
-        background-position-x: 100px;
+      100% {
+        background-position-x: 90px;
+        background-position-y: 0px;
       }
     }
     @keyframes flow-out {
-      from {
-        transform: translateY(0);
-        background-position-x: 100px;
+      0% {
+        background-position-x: 90px;
       }
-      to {
-        transform: translateY(-100%);
-        background-position-x: 10px;
+      100% {
+        background-position-x: 00px;
       }
     }
   }
@@ -132,13 +142,11 @@
   letter-spacing: normal;
 
   text-align: right;
-  @media screen and (max-width: 767px) {
-    margin-bottom: 45px;
-  }
-  @media screen and (min-width: 768px) {
+
+  @media screen and (min-width: $tablet) {
     font-size: 14px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 16px;
   }
 }
@@ -152,7 +160,7 @@
   width: 150px;
 
   color: #907e82;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 100%;
     line-height: 1.85;
   }
