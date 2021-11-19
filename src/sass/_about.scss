@@ -215,11 +215,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
+  max-width: 50px;
   max-height: auto;
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   background-color: $bgc-section;
+  background-image: url(../images/modal/moloco.jpg);
   border-radius: 8px;
   opacity: 1;
   @media screen and (max-width: 479px) {
@@ -239,7 +240,7 @@
   top: 8px;
   right: 8px;
   cursor: pointer;
-  background-color: $bgc-section;
+  background-color: $hero-text;
 }
 .close-btn-icon {
   width: 25px;
