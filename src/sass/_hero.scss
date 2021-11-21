@@ -60,44 +60,6 @@
     line-height: (58 / 52 * 100%);
   }
 }
-.hero-btn-item {
-  display: inline-block;
-  text-align: center;
-  width: 62.4px;
-  height: 24px;
-  color: $hero-text;
-  border-radius: 20px;
-  margin-right: 8px;
-  background-color: $accent-color;
-  padding-top: auto;
-  @media screen and (min-width: $desktop) {
-    width: 102px;
-    height: 40px;
-    padding-top: 10px;
-  }
-  &:last-child {
-    margin-right: 0px;
-    width: 82.8px;
-    height: 24px;
-    color: $accent-color;
-    background-color: $hero-text;
-    @media screen and (min-width: $desktop) {
-      width: 138px;
-      height: 40px;
-    }
-    .hero-btn-link {
-      color: $accent-color;
-    }
-    &:hover,
-    &:focus {
-      background-color: #ecebeb;
-    }
-  }
-  &:hover,
-  &:focus {
-    background-color: #c7133e;
-  }
-}
 .hero-btn-list {
   display: flex;
   align-items: center;
@@ -109,14 +71,59 @@
     margin-top: 25px;
   }
 }
+.hero-btn {
+  padding: 0;
+  display: inline-block;
+  border: none;
+  text-align: center;
+  border-radius: 20px;
+  height: 24px;
+  overflow: hidden;
+}
+.hero-btn-item-one {
+  @extend .hero-btn;
+  width: 63px;
+  margin-right: 8px;
+  background-color: $accent-color;
+  &:hover .hero-btn-link,
+  &:focus .hero-btn-link {
+    color: $accent-color;
+    background-color: white;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 102px;
+    height: 40px;
+  }
+}
+.hero-btn-item-two {
+  @extend .hero-btn;
+  width: 82.8px;
+  background-color: $hero-text;
+  & .hero-btn-link {
+    color: $accent-color;
+  }
+  &:hover .hero-btn-link,
+  &:focus .hero-btn-link {
+    color: white;
+    background-color: $accent-color;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 138px;
+    height: 40px;
+  }
+}
 .hero-btn-link {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   font-size: 8px;
   line-height: 1.25;
-  text-align: center;
-  color: $hero-text;
+  color: white;
+  overflow: hidden;
+
+  transition: all 250ms ease-in;
   @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: (14 / 18 * 100%);
@@ -136,7 +143,6 @@
   display: block;
   max-width: 171px;
   height: 100%;
-  // margin-top: 9px;
   margin-left: 77px;
   fill: transparent;
   z-index: 1;
@@ -161,7 +167,6 @@
   z-index: 0;
   @media screen and (min-width: $mobile) {
     margin-top: 70px;
-    // margin-left: 120px;
     width: 324px;
     height: 324px;
     animation-name: pink-circle-f1;
